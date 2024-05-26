@@ -1,0 +1,171 @@
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: #00AA00;
+    font-family: "Jersey 15";
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    color: #ADFF2F;
+    font-family: "Macondo";
+    text-transform: capitalize;
+}
+
+.comanders {
+    align-items: center;
+    border-radius: 25px;
+    background: #ff1c14;
+}
+
+.video-board {
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.joystick {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: #444;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.joystick-handle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #888;
+    border-radius: 50%;
+    transition: transform 0.1s;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #555, #222);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px #111, -3px -3px 8px #777;
+    transition: all 0.3s;
+}
+
+button:active {
+    box-shadow: inset 3px 3px 8px #111, inset -3px -3px 8px #777;
+}
+
+.hidden {
+    display: none;
+}
+
+#toggle-buttons {
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: #555;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggle-buttons:hover {
+    background: #777;
+}
+
+button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #555, #222);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px #111, -3px -3px 8px #777;
+    transition: all 0.3s;
+}
+
+button:active {
+    box-shadow: inset 3px 3px 8px #111, inset -3px -3px 8px #777;
+}
+
+.hidden-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: none;
+    z-index: 1;
+}
+
+button:hover .hidden-options {
+    display: block;
+}
+
+.hidden-options .option {
+    margin: 5px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden-options .option:hover {
+    text-decoration: underline;
+}
+
+.console-container {
+    display: flex;
+}
+
+.sensor-display {
+    flex: 1;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.sensor-display h2 {
+    margin-top: 0;
+}
+
+.sensor-display h3 {
+    margin-top: 20px;
+}
+
+.video-board {
+    flex: 2;
+}

@@ -1,0 +1,50 @@
+.body_main {
+    font-size: 18px;
+    font-family: "Play";
+    color: #e0ba84;
+}
+
+code {
+    width: 400px;
+    height: 350px;
+    font-size: 14px;
+    font-family: "Orbitron";
+    border-radius: 12.5px 0;
+    border: 2px solid #4FD9E6;
+}
+
+.titles {
+    text-align: center;
+    color: #814b1c;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+.image_content {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.dos {
+    width: 100px;
+}
+
+@media (max-width: 800px) {
+    .body_main {
+        font-size: 14px;
+    }
+    code {
+        font-size: 12px;
+    }
+}
