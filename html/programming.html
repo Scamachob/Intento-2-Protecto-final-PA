@@ -178,381 +178,444 @@
         <!--START INPUT CODE ONE-->
         <h2 class="titles">Códigos CSS</h2>
         <h3 class="titles">Código general base para los HTML</h3>
-        <pre>
-            <code>
-                &ast; &lbrace;
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                    font-style: normal;
-                    text-decoration: none;
-                    box-sizing: border-box;
-                &rbrace;
-                
-                body &lbrace;
-                    display:block;
-                    text-align: justify;
-                    background: #1a0014;
-                &rbrace;
-                
-                .head &lbrace;
-                    display: flex;
-                    position: relative;
-                    justify-content: center;
-                    font-family: 'Nova Slim';
-                &rbrace;
-                
-                .header_options &lbrace;
-                    display: flex;
-                    position: fixed;
-                    width: fit-content;
-                    height: fit-content;
-                    border: 2px solid #4FD9E6;
-                    border-radius: 0 0 50px 50px;
-                    background-color: #150924;
-                    justify-content: space-between;
-                &rbrace;
-                
-                .options_page &lbrace;
-                    margin: 10px 15px;
-                &rbrace;
-                
-                .options_page > li &lbrace;
-                    margin: 0 25px;
-                    display: inline-block;
-                &rbrace;
-                
-                .options_page > li > a &lbrace;
-                    color: #298894;
-                &rbrace;
-                
-                .options_page > li > a:hover &lbrace;
-                    color: #4FD9E6;
-                &rbrace;
-                
-                .secundary_options &lbrace;
-                    display: none;
-                    position: fixed;
-                    padding: 10px;
-                    margin-top: 15px;
-                    border: 2px solid #4FD9E6;
-                    border-radius: 0 25px 0 25px;
-                    background-color: #150924;
-                &rbrace;
-                
-                .secundary_options > li > a &lbrace;
-                    display: flex;
-                    margin: 5px 0;
-                    font-size: 20px;
-                    color:#298894;
-                    font-family: "Caveat";
-                &rbrace;
-                
-                .secundary_options > li > a:hover &lbrace;
-                    color: #4FD9E6;
-                &rbrace;
-                
-                .panel &lbrace;
-                    left: 5px;
-                    width: 55px;
-                    height: 55px;
-                    z-index: 200;
-                    position: fixed;
-                    border-radius: 100%;
-                    top: calc(50% - 205px);
-                    border: 2px solid #4FD9E6;
-                    background-color: #150924;
-                &rbrace;
-                
-                .icon__menu &lbrace;
-                    width: 100%;
-                    display: flex;
-                    height: 100%;
-                    cursor: pointer;
-                    font-size: 35px;
-                    position: relative;
-                    color: #298894;
-                    align-items: center;
-                    justify-content: center;
-                &rbrace;
-                
-                .icon__menu:hover &lbrace;
-                    color: #4FD9E6;
-                &rbrace;
-                
-                .menu__side &lbrace;
-                    top: 50%;
-                    width: 75px;
-                    bottom: 50%;
-                    height: 270px;
-                    position: fixed;
-                    margin: auto 0;
-                    overflow: hidden;
-                    color: #FFE2A2;
-                    background: #150924;
-                    border: 2px solid #4FD9E6;
-                    border-top-right-radius: 50px;
-                    border-bottom-right-radius: 50px;
-                &rbrace;
-                
-                .name__page &lbrace;
-                    display: flex;
-                    position: relative;
-                    margin-top: 15px;
-                    height: fit-content;
-                    align-items: center;
-                    padding-right: 15px;
-                    background-color: #4C55C5;
-                &rbrace;
-                
-                .name__page img &lbrace;
-                    margin-left: 5px;
-                &rbrace;
-                
-                .name__page h4 &lbrace;
-                    display: flex;
-                    height: 64px;
-                    position: relative;
-                    margin-left: 5px;
-                    font-weight: 100;
-                    text-align: center;
-                    align-items: center;
-                    text-transform: capitalize;
-                    font-family: 'Protest Revolution';
-                &rbrace;
-                
-                .options__menu &lbrace;
-                    margin-left: 25px;
-                &rbrace;
-                
-                .options__menu a &lbrace;
-                    color: #298894;
-                    font-family: 'Julee';
-                &rbrace;
-                
-                .options__menu a:hover &lbrace;
-                    font-size: 20px;
-                    color: #4fd9e6;
-                    font-family: "Teko";
-                    text-transform: uppercase;
-                &rbrace;
-                
-                .options__menu .option &lbrace;
-                    display: flex;
-                    margin-top: 35px;
-                &rbrace;
-                
-                .options__menu .option i &lbrace;
-                    width: 5px;
-                    margin-right: 40px;
-                &rbrace;
-                
-                .options__menu .option h4 &lbrace;
-                    font-weight: 300;
-                    white-space: nowrap;
-                &rbrace;
-                
-                a.selected &lbrace;
-                    position: relative;
-                    color: #4C55C5;
-                &rbrace;
-                
-                .selected:before &lbrace;
-                    top: 5px;
-                    right: 15px;
-                    width: 2px;
-                    content: "";
-                    height: 35px;
-                    position: absolute;
-                    background: #4C55C5;
-                &rbrace;
-                
-                .selected:hover::before &lbrace;
-                    background: #4fd9e6;
-                 &rbrace;
-                
-                .menu__side_move &lbrace;
-                    width: 230px;
-                    border-radius: 0 25px 25px 0;
-                &rbrace;
-                
-                main &lbrace;
-                    margin: 70px 30px 70px 90px;
-                    padding: 30px 50px 20px 50px;
-                &rbrace;
-                
-                h1 &lbrace;
-                    margin: 5px 0 25px 0;
-                &rbrace;
-                
-                .footer_page &lbrace;
-                    bottom: 0;
-                    display: flex;
-                    position: relative;
-                    justify-content: center;
-                &rbrace;
-                
-                .footer_body &lbrace;
-                    bottom: 0;
-                    display: flex;
-                    position: fixed;
-                    padding: 10px;
-                    color: #298894;
-                    height: fit-content;
-                    max-width: fit-content;
-                    border: 2px solid #4fd9e6;
-                    border-radius: 50px 50px 0 0;
-                    background-color: #150924;
-                &rbrace;
-                
-                .footer_body .footer_icon &lbrace;
-                    padding: 0;
-                    display: flex;
-                    margin: 0 15px;
-                    list-style-type: none;
-                    justify-content: center;
-                &rbrace;
-                
-                .footer_body li &lbrace;
-                    padding: 0 5px;
-                &rbrace;
-                
-                .footer_body ul a &lbrace;
-                    color: inherit;
-                    font-family: 'Bebas Neue';
-                    text-transform: uppercase;
-                &rbrace;
-                
-                .footer_body ul a:hover &lbrace;
-                    color: #4fd9e6;
-                &rbrace;
-                
-                .footer_body .social &lbrace;
-                    display: flex;
-                    text-align: center;
-                    line-height: 30px;
-                    margin-left: 15px;
-                &rbrace;
-                
-                .footer_body .social > a &lbrace;
-                    width: 35px;
-                    height: 35px;
-                    color: inherit;
-                    margin: 0 5px;
-                    font-size: 20px;
-                    border-radius: 50px;
-                    border: 2px solid #298894;
-                &rbrace;
-                
-                .footer_body .social > a:hover &lbrace;
-                    color: #4FD9E6;
-                    border-color: #4FD9E6;
-                &rbrace;
-                
-                .copyright &lbrace;
-                    font-size: 12px;
-                    font-weight: 700;
-                    text-align: center;
-                    color: #298894;
-                    text-transform: uppercase;
-                    font-family: 'Dancing Script';
-                &rbrace;
-                
-                .footer_two_elements &lbrace;
-                    margin-right: 10px;
-                &rbrace;
-                
-                @media (max-width: 1000px) &lbrace;
-                    .header_options &lbrace;
-                        display: contents;
-                        position: absolute;
-                    &rbrace;
-                    .options_page &lbrace;
-                        margin: 0;
-                    &rbrace;
-                    .options_page > li &lbrace;
-                        margin: 10px;
-                    &rbrace;
-                    .panel &lbrace;
-                        left: 0;
-                        top: 5px;
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 0 25px 25px 0;
-                        background-color: #1a0014;
-                    &rbrace;
-                    .menu_location &lbrace;
-                        position: fixed;
-                    &rbrace;
-                    .icon__menu &lbrace;
-                        font-size: 40px;
-                    &rbrace;
-                    .menu__side &lbrace;
-                        top: 25px;
-                        width: 55px;
-                        height: 240px;
-                        position: relative;
-                        border-radius: 0 25px 25px 0;
-                    &rbrace;
-                    .name__page &lbrace;
-                        height: 50px;
-                    &rbrace;
-                    .name__page img &lbrace;
-                        width: 50px;
-                        height: 50px;
-                        margin-left: 0;
-                        margin-right: 10px;
-                    &rbrace;
-                    .options__menu &lbrace;
-                        margin-left: 15px;
-                    &rbrace;    
-                    .options__menu .option &lbrace;
-                        margin-top: 25px;
-                    &rbrace;
-                    .options__menu .option i &lbrace;
-                        margin-right: 50px;
-                    &rbrace;
-                    .selected:before &lbrace;
-                        width: 2px;
-                        right: 5px;
-                    &rbrace;
-                    .menu__side_move &lbrace;
-                        width: 55px;
-                        display: none;
-                    &rbrace;
-                    main &lbrace;
-                        padding: 15px;
-                        margin: 20px 15px 100px 15px;
-                    &rbrace;
-                    h1 &lbrace;
-                        margin: 5px;
-                    &rbrace;
-                    .footer_body &lbrace;
-                        bottom: 0;
-                        padding: 0;
-                        position: absolute;
-                        align-items: center;
-                        flex-direction: column;
-                    &rbrace;
-                    .footer_body .footer_icon &lbrace;
-                        display: flex;
-                        margin: 5px 0;
-                    &rbrace;
-                    .footer_body li &lbrace;
-                        padding: 0 5px;
-                    &rbrace;
-                    .footer_body .social &lbrace;
-                        line-height: 30px;
-                    &rbrace;
-                    .footer_body .social > a &lbrace;
-                        margin: 5px;
-                    &rbrace;
-                    .footer_two_elements &lbrace;
-                        margin-right: 0px;
-                    &rbrace;
-                &rbrace;
-            </code>
-        </pre>
+        <table>
+            <tr>
+                <th><pre>
+                    <code>
+                        &ast; &lbrace;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            font-style: normal;
+                            text-decoration: none;
+                            box-sizing: border-box;
+                        &rbrace;
+                        
+                        body &lbrace;
+                            display:block;
+                            text-align: justify;
+                            background: #1a0014;
+                        &rbrace;
+                        
+                        .head &lbrace;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                            font-family: 'Nova Slim';
+                        &rbrace;
+                        
+                        .header_options &lbrace;
+                            display: flex;
+                            position: fixed;
+                            width: fit-content;
+                            height: fit-content;
+                            border: 2px solid #4FD9E6;
+                            border-radius: 0 0 50px 50px;
+                            background-color: #150924;
+                            justify-content: space-between;
+                        &rbrace;
+                        
+                        .options_page &lbrace;
+                            margin: 10px 15px;
+                        &rbrace;
+                        
+                        .options_page > li &lbrace;
+                            margin: 0 25px;
+                            display: inline-block;
+                        &rbrace;
+                        
+                        .options_page > li > a &lbrace;
+                            color: #298894;
+                        &rbrace;
+                        
+                        .options_page > li > a:hover &lbrace;
+                            color: #4FD9E6;
+                        &rbrace;
+                        
+                        .secundary_options &lbrace;
+                            display: none;
+                            position: fixed;
+                            padding: 10px;
+                            margin-top: 15px;
+                            border: 2px solid #4FD9E6;
+                            border-radius: 0 25px 0 25px;
+                            background-color: #150924;
+                        &rbrace;
+                        
+                        .secundary_options > li > a &lbrace;
+                            display: flex;
+                            margin: 5px 0;
+                            font-size: 20px;
+                            color:#298894;
+                            font-family: "Caveat";
+                        &rbrace;
+                        
+                        .secundary_options > li > a:hover &lbrace;
+                            color: #4FD9E6;
+                        &rbrace;
+                        
+                        .panel &lbrace;
+                            left: 5px;
+                            width: 55px;
+                            height: 55px;
+                            z-index: 200;
+                            position: fixed;
+                            border-radius: 100%;
+                            top: calc(50% - 205px);
+                            border: 2px solid #4FD9E6;
+                            background-color: #150924;
+                        &rbrace;
+                        
+                        .icon__menu &lbrace;
+                            width: 100%;
+                            display: flex;
+                            height: 100%;
+                            cursor: pointer;
+                            font-size: 35px;
+                            position: relative;
+                            color: #298894;
+                            align-items: center;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .icon__menu:hover &lbrace;
+                            color: #4FD9E6;
+                        &rbrace;
+                        
+                        .menu__side &lbrace;
+                            top: 50%;
+                            width: 75px;
+                            bottom: 50%;
+                            height: 270px;
+                            position: fixed;
+                            margin: auto 0;
+                            overflow: hidden;
+                            color: #FFE2A2;
+                            background: #150924;
+                            border: 2px solid #4FD9E6;
+                            border-top-right-radius: 50px;
+                            border-bottom-right-radius: 50px;
+                        &rbrace;
+                        
+                        .name__page &lbrace;
+                            display: flex;
+                            position: relative;
+                            margin-top: 15px;
+                            height: fit-content;
+                            align-items: center;
+                            padding-right: 15px;
+                            background-color: #4C55C5;
+                        &rbrace;
+                        
+                        .name__page img &lbrace;
+                            margin-left: 5px;
+                        &rbrace;
+                        
+                        .name__page h4 &lbrace;
+                            display: flex;
+                            height: 64px;
+                            position: relative;
+                            margin-left: 5px;
+                            font-weight: 100;
+                            text-align: center;
+                            align-items: center;
+                            text-transform: capitalize;
+                            font-family: 'Protest Revolution';
+                        &rbrace;
+                        
+                        .options__menu &lbrace;
+                            margin-left: 25px;
+                        &rbrace;
+                        
+                        .options__menu a &lbrace;
+                            color: #298894;
+                            font-family: 'Julee';
+                        &rbrace;
+                        
+                        .options__menu a:hover &lbrace;
+                            font-size: 20px;
+                            color: #4fd9e6;
+                            font-family: "Teko";
+                            text-transform: uppercase;
+                        &rbrace;
+                        
+                        .options__menu .option &lbrace;
+                            display: flex;
+                            margin-top: 35px;
+                        &rbrace;
+                        
+                        .options__menu .option i &lbrace;
+                            width: 5px;
+                            margin-right: 40px;
+                        &rbrace;
+                        
+                        .options__menu .option h4 &lbrace;
+                            font-weight: 300;
+                            white-space: nowrap;
+                        &rbrace;
+                        
+                        a.selected &lbrace;
+                            position: relative;
+                            color: #4C55C5;
+                        &rbrace;
+                        
+                        .selected:before &lbrace;
+                            top: 5px;
+                            right: 15px;
+                            width: 2px;
+                            content: "";
+                            height: 35px;
+                            position: absolute;
+                            background: #4C55C5;
+                        &rbrace;
+                        
+                        .selected:hover::before &lbrace;
+                            background: #4fd9e6;
+                         &rbrace;
+                        
+                        .menu__side_move &lbrace;
+                            width: 230px;
+                            border-radius: 0 25px 25px 0;
+                        &rbrace;
+                        
+                        main &lbrace;
+                            margin: 70px 30px 70px 90px;
+                            padding: 30px 50px 20px 50px;
+                        &rbrace;
+                        
+                        h1 &lbrace;
+                            margin: 5px 0 25px 0;
+                        &rbrace;
+                        
+                        .footer_page &lbrace;
+                            bottom: 0;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .footer_body &lbrace;
+                            bottom: 0;
+                            display: flex;
+                            position: fixed;
+                            padding: 10px;
+                            color: #298894;
+                            height: fit-content;
+                            max-width: fit-content;
+                            border: 2px solid #4fd9e6;
+                            border-radius: 50px 50px 0 0;
+                            background-color: #150924;
+                        &rbrace;
+                        
+                        .footer_body .footer_icon &lbrace;
+                            padding: 0;
+                            display: flex;
+                            margin: 0 15px;
+                            list-style-type: none;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .footer_body li &lbrace;
+                            padding: 0 5px;
+                        &rbrace;
+                        
+                        .footer_body ul a &lbrace;
+                            color: inherit;
+                            font-family: 'Bebas Neue';
+                            text-transform: uppercase;
+                        &rbrace;
+                        
+                        .footer_body ul a:hover &lbrace;
+                            color: #4fd9e6;
+                        &rbrace;
+                        
+                        .footer_body .social &lbrace;
+                            display: flex;
+                            text-align: center;
+                            line-height: 30px;
+                            margin-left: 15px;
+                        &rbrace;
+                        
+                        .footer_body .social > a &lbrace;
+                            width: 35px;
+                            height: 35px;
+                            color: inherit;
+                            margin: 0 5px;
+                            font-size: 20px;
+                            border-radius: 50px;
+                            border: 2px solid #298894;
+                        &rbrace;
+                        
+                        .footer_body .social > a:hover &lbrace;
+                            color: #4FD9E6;
+                            border-color: #4FD9E6;
+                        &rbrace;
+                        
+                        .copyright &lbrace;
+                            font-size: 12px;
+                            font-weight: 700;
+                            text-align: center;
+                            color: #298894;
+                            text-transform: uppercase;
+                            font-family: 'Dancing Script';
+                        &rbrace;
+                        
+                        .footer_two_elements &lbrace;
+                            margin-right: 10px;
+                        &rbrace;
+                        
+                        @media (max-width: 1000px) &lbrace;
+                            .header_options &lbrace;
+                                display: contents;
+                                position: absolute;
+                            &rbrace;
+                            .options_page &lbrace;
+                                margin: 0;
+                            &rbrace;
+                            .options_page > li &lbrace;
+                                margin: 10px;
+                            &rbrace;
+                            .panel &lbrace;
+                                left: 0;
+                                top: 5px;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 0 25px 25px 0;
+                                background-color: #1a0014;
+                            &rbrace;
+                            .menu_location &lbrace;
+                                position: fixed;
+                            &rbrace;
+                            .icon__menu &lbrace;
+                                font-size: 40px;
+                            &rbrace;
+                            .menu__side &lbrace;
+                                top: 25px;
+                                width: 55px;
+                                height: 240px;
+                                position: relative;
+                                border-radius: 0 25px 25px 0;
+                            &rbrace;
+                            .name__page &lbrace;
+                                height: 50px;
+                            &rbrace;
+                            .name__page img &lbrace;
+                                width: 50px;
+                                height: 50px;
+                                margin-left: 0;
+                                margin-right: 10px;
+                            &rbrace;
+                            .options__menu &lbrace;
+                                margin-left: 15px;
+                            &rbrace;    
+                            .options__menu .option &lbrace;
+                                margin-top: 25px;
+                            &rbrace;
+                            .options__menu .option i &lbrace;
+                                margin-right: 50px;
+                            &rbrace;
+                            .selected:before &lbrace;
+                                width: 2px;
+                                right: 5px;
+                            &rbrace;
+                            .menu__side_move &lbrace;
+                                width: 55px;
+                                display: none;
+                            &rbrace;
+                            main &lbrace;
+                                padding: 15px;
+                                margin: 20px 15px 100px 15px;
+                            &rbrace;
+                            h1 &lbrace;
+                                margin: 5px;
+                            &rbrace;
+                            .footer_body &lbrace;
+                                bottom: 0;
+                                padding: 0;
+                                position: absolute;
+                                align-items: center;
+                                flex-direction: column;
+                            &rbrace;
+                            .footer_body .footer_icon &lbrace;
+                                display: flex;
+                                margin: 5px 0;
+                            &rbrace;
+                            .footer_body li &lbrace;
+                                padding: 0 5px;
+                            &rbrace;
+                            .footer_body .social &lbrace;
+                                line-height: 30px;
+                            &rbrace;
+                            .footer_body .social > a &lbrace;
+                                margin: 5px;
+                            &rbrace;
+                            .footer_two_elements &lbrace;
+                                margin-right: 0px;
+                            &rbrace;
+                        &rbrace;
+                    </code>
+                </pre></th>
+                <th style="width: 30%;"></th>
+                <th>
+                    <pre>
+                        <code>
+                            .body_main {
+                                font-size: 18px;
+                                font-family: "Play";
+                                color: #EBF21A;
+                            }
+                            
+                            code {
+                                width: 400px;
+                                height: 350px;
+                                font-size: 14px;
+                                font-family: "Orbitron";
+                                border-radius: 12.5px 0;
+                                border: 2px solid #4FD9E6;
+                            }
+                            
+                            .titles {
+                                text-align: center;
+                                color: #60BF31;
+                            }
+                            
+                            h1 {
+                                text-transform: uppercase;
+                            }
+                            
+                            h2 {
+                                text-transform: uppercase;
+                            }
+                            
+                            h3 {
+                                text-transform: capitalize;
+                            }
+                            
+                            .image_content {
+                                float: left;
+                                width: 200px;
+                                margin-right: 10px;
+                            }
+                            
+                            .dos {
+                                width: 100px;
+                            }
+                            
+                            @media (max-width: 800px) {
+                                .body_main {
+                                    font-size: 14px;
+                                }
+                                code {
+                                    font-size: 12px;
+                                }
+                            }
+                            
+                        </code>
+                    </pre>
+                </th>
+            </tr>
+        </table>
+        
         <!--END INPUT CODE ONE-->
     </main>
     <!--END BODY-MAIN CONTENT-->
