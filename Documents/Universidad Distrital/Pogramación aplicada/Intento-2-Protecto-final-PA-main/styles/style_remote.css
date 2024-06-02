@@ -1,0 +1,297 @@
+:root {
+    --off-color: #003129;
+    --on-color: #0CF25D;
+    --color-back: #F9F33D;
+    --color-border: #FA6918;
+    --pointer-color: #04D939;
+}
+
+.tag1 {
+    font-size: 70px;
+    text-align: center;
+    color: #21a30d;
+    font-family: "Jersey 15";
+    text-transform: uppercase;
+}
+
+.tag2 {
+    font-size: 50px;
+    text-align: center;
+    color: #0cb436;
+    font-family: "Jersey 15";
+    text-transform: capitalize;
+}
+
+.text {
+    color: #FFFC00;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.begin {
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.body_main {
+    font-family: "Macondo";
+}
+
+.console_container {
+    gap: 5px;
+    width: 100%;
+    display: grid;
+    height: 550px;
+    padding: 10px;
+    position: relative;
+    border-radius: 3.125px;
+    border: 3px solid #FFF66F;
+    background-color: #5A462E;
+}
+
+.design {
+    border-radius: 6.25px;
+    border: 2px solid #FFF66F;
+    background-color: #8A7750;
+}
+
+.inf_receive {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.distance_sensor {
+    width: 25%;
+}
+
+.video_box {
+    width: 50%;
+}
+
+.ambient_sensor {
+    gap: 5px;
+    width: 25%;
+    display: grid;
+}
+
+.temperature {
+}
+
+.humidity {
+}
+
+.buttons {
+    gap: 5px;
+    width: 100%;
+    display: flex;
+}
+
+.joysticks_box {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joystick_base {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(30deg, #D99E32, #F28B0C, #F2A20C, #FFB426, #56FF0D, #E88F17, #FFFF00, #D99E32, #F28B0C, #F2CF66);
+    border: 3px solid #02733E;
+}
+
+.joystick_handle {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    transition: transform 0.1s;
+    background: linear-gradient(200deg, #02733E, #103D18, #44C926, #77C95F, #103D18, #44C926, #83C724, #9AC347);
+}
+
+.joystick_handle::before {
+    left: 50%;
+    top: 50%;
+    content: '';
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(200deg, #F2E422, #F2CB05, #F2B705, #F29F05, #FFFF00, #F28705);
+}
+
+.buttons_moves {
+    width: 50%;
+    text-align: center;
+}
+
+.knobs {
+    left: 25%;
+    right: 25%;
+    display: none;
+    row-gap: 5px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: fit-content;
+    position: absolute;
+    height: fit-content;
+    column-gap: 20px;
+    border-radius: 12.5px;
+    grid-auto-rows: 100px;
+    border: 2px solid #FA6918;
+    background-color: #F2E484;
+    grid-template-columns: repeat(4, 100px);
+}
+
+.knobs.open {
+    display: grid;
+}
+
+#showKnobs {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 6.25px;
+    font-family: "Macondo";
+    color: var(--color-border);
+    background-color: var(--color-back);
+    border: 2px solid var(--color-border);
+}
+
+#showKnobs:hover {
+    font-weight: bold;
+    border: 3px solid #FA6918;
+}
+
+.knob_container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+}
+
+.knob_box {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.knob_path {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, #731702, #023117);
+    clip-path: path('M14,85 A50 50 0 1 1 85,85 L85,85 A48,48 0 1 0 14,85 Z');
+}
+
+.pointer_mark {
+    left: 50%;
+    width: 0;
+    height: 80%;
+    bottom: 25%;
+    position: relative;
+    box-shadow: none;
+    transform-origin: bottom;
+    transform: translateX(-50%);
+    transform: rotateZ(-90deg);
+    background-color: var(--pointer-color);
+    transition: box-shadow 1s, width 1s, transform 0.5s;
+}
+
+.pointer_mark.on {
+    width: 3px;
+    box-shadow: 3px 0 3px var(--pointer-color), -3px 0 3px var(--pointer-color),
+    4px 0 6px var(--pointer-color), -4px 0 6px var(--pointer-color),
+    5px 0 9px var(--pointer-color), -5px 0 9px var(--pointer-color),
+    6px 0 12px var(--pointer-color), -6px 0 12px var(--pointer-color),
+    7px 0 15px var(--pointer-color), -7px 0 15px var(--pointer-color);
+}
+
+.backup {
+    top: 10px;
+    width: 65px;
+    display: flex;
+    height: 65px;
+    position: absolute;
+    align-items: center;
+    box-shadow: none;
+    border-radius: 50%;
+    justify-content: center;
+    background: var(--off-color);
+    border: 10px solid transparent;
+    transition: border 1s, box-shadow 1s;
+}
+
+.backup.on {
+    border: 10px solid var(--on-color);
+    box-shadow: 0 0 10px var(--on-color);
+}
+
+.knob {
+    width: 55px;
+    display: flex;
+    height: 55px;
+    position: absolute;
+    box-shadow: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 1s;
+    background-color: #337070;
+}
+
+.knob.on {
+    box-shadow: 0 -3px 3px #93D94E, inset 0 -2px 2px #93D94E;
+}
+
+.knob::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 -10px 30px #ffffff 30px #000000;
+    background: linear-gradient(to bottom, #011F26, #591C21);
+}
+
+.knob:active {
+    transform: scale(0.98);
+}
+
+.value_degree {
+    width: 50px;
+    display: flex;
+    height: 20px;
+    font-size: 20px;
+    margin-left: 25%;
+    color: #56A07F;
+    transition: color 1s;
+    margin-top: -20px;
+    border-radius: 12.5px;
+    justify-content: center;
+    background-color: var(--off-color);
+    box-shadow: inset -2px -2px 2px #16232E;
+}
+
+.value_degree.on {
+    color: var(--on-color);
+}

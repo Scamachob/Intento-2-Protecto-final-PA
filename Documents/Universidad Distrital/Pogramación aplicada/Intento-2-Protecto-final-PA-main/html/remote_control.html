@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONTS TYPES WEB FREE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Julee&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Revolution&lay=swap" rel="stylesheet">
+
+    <!--FILES CSS STYLE PAGE-->
+    <link rel="stylesheet" href="../styles/style_web.css">
+    <link rel="stylesheet" href="../styles/style_remote.css">
+
+    <!--ICONS WEB STYLES FREE-->
+    <link rel="icon" href="../images/icono_azul.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <title>Control Remoto</title>
+</head>
+
+<body>
+    <!--START HEADER-->
+    <header class="head">
+        <nav class="header_options">
+            <ul class="options_page">
+                <li>
+                    <a href="#">Opción 1</a>
+                    <ul class="secundary_options">
+                        <li><a href="#">Subopción 1.1</a></li>
+                        <li><a href="#">Subopción 1.2</a></li>
+                        <li><a href="#">Subopción 1.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Opción 2</a>
+                    <ul class="secundary_options">
+                        <li><a href="#">Subopción 2.1</a></li>
+                        <li><a href="#">Subopción 2.2</a></li>
+                        <li><a href="#">Subopción 2.3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Opción 3</a>
+                    <ul class="secundary_options">
+                        <li><a href="#">Subopción 3.1</a></li>
+                        <li><a href="#">Subopción 3.2</a></li>
+                        <li><a href="#">Subopción 3.3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--END HEADER-->
+
+    <!--START MENU-->
+    <div class="location_panel_side">
+
+        <div class="panel_location">
+            <div class="panel">
+                <div class="icon__menu">
+                    <i class="fa-regular fa-snowflake" title="menú" id="btn_open"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_location">
+
+            <nav class="menu__side" id="menu_side">
+                <div class="name__page">
+                    <img src="../images/icono.png" title="Logo">
+                    <i title="Logo"></i>
+                    <h4>
+                        Araña robótica controlada por web
+                    </h4>
+                </div>
+
+                <div class="options__menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <div class="option">
+                                    <i class="fa-solid fa-flag-checkered" title="Inicio"></i>
+                                    <h4>
+                                        Inicio
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="remote_control.html" class="selected">
+                                <div class="option">
+                                    <i class="fa-solid fa-gamepad" title="Control Remoto"></i>
+                                    <h4>
+                                        Control Remoto
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="programming.html">
+                                <div class="option">
+                                    <i class="fa-solid fa-laptop-code" title="Programación"></i>
+                                    <h4>
+                                        Programación
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--END MENU-->
+
+    <!--START BODY-MAIN CONTENT-->
+    <main class="body_main" id="body">
+        <!--START CONTENT RESUME PAGE-->
+        <h1 class="tag1">
+            Consola de mando araña robótica
+        </h1>
+
+        <p class="text begin">
+            Comandos para controlar la araña y sus accesorios
+        </p>
+
+        <h2 class="tag2">
+            Control Remoto
+        </h2>
+        <!--END CONTENT RESUME PAGE-->
+
+        <!--START BUTTONS CONTROL REMOTE-->
+        <div class="console_container">
+            <div class="inf_receive">
+                <div class="distance_sensor design">
+                    distancia
+                </div>
+                <div class="video_box design">
+                    vídeo
+                </div>
+                <div class="ambient_sensor">
+                    <div class="temperature design">
+                        temperature
+                    </div>
+                    <div class="humidity design">
+                        humidity
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="joysticks_box one design">
+                        <div class="joystick_base">
+                            <div class="joystick_handle"></div>
+                        </div>
+                </div>
+
+                <div class="buttons_moves design">
+                    <button id="showKnobs">Movimiento<br>Articular</button>
+                    <div class="knobs">
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+
+                        <div class="knob_container">
+                            <div class="knob_box">
+                                <div class="knob_path">
+                                    <div class="pointer_mark"></div>
+                                </div>
+                                <div class="backup">
+                                    <div class="knob"></div>
+                                </div>
+                            </div>
+                            <p class="value_degree">0°</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="joysticks_box two design">
+                        <div class="joystick_base">
+                            <div class="joystick_handle"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--END BUTTONS CONTROL REMOTE-->
+
+        <!--START CONTENT RESUME PAGE-->
+        <h2 class="tag2">
+            Indicaciones Básicas
+        </h2>
+
+        <p class="text">
+            <ul class="text">
+                <li>Los "knobs" o "perillas" desplegados con el botón movimiento articular, representan cada division de movimiento en la araña, cada servo, las filasson la articulación y las columnas representan las partas, iniciando desde el servo en la base del cuerpo y conectando con la primer "perilla" de arriba abajo, las patas tienen un número asignado, con lo cual corresponde con la primer fila el primer número.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+        <!--END CONTENT RESUME PAGE-->
+    </main>
+    <!--END BODY-MAIN CONTENT-->
+
+    <!--START FOOTER-->
+    <div class="footer_page">
+        <footer class="footer_body">
+
+            <div class="social">
+                <a href="#">
+                    <i class="fa-brands fa-instagram" title="Instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-snapchat" title="Snapchat"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter" title="Twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+                </a>
+            </div>
+
+            <div class="footer_two_elements">
+                <ul class="footer_icon">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="remote_control.html">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    arcw © 2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!--END FOOTER-->
+
+    <script src="../script/js_web.js"></script>
+    <script src="../script/remote.js"></script>
+</body>
+</html>
