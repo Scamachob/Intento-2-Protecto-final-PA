@@ -60,6 +60,7 @@
     gap: 5px;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .distance_sensor {
@@ -77,9 +78,11 @@
 }
 
 .temperature {
+    font-size: 20px;
 }
 
 .humidity {
+    font-size: 20px;
 }
 
 .buttons {
@@ -148,8 +151,8 @@
     column-gap: 20px;
     border-radius: 12.5px;
     grid-auto-rows: 100px;
-    border: 2px solid #FA6918;
-    background-color: #F2E484;
+    border: 3px solid #FA6918;
+    background-color: #ffe958;
     grid-template-columns: repeat(4, 100px);
 }
 
@@ -211,7 +214,7 @@
     box-shadow: none;
     transform-origin: bottom;
     transform: translateX(-50%);
-    transform: rotateZ(-90deg);
+    transform: rotateZ(-55deg);
     background-color: var(--pointer-color);
     transition: box-shadow 1s, width 1s, transform 0.5s;
 }

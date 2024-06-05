@@ -20,11 +20,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Revolution&lay=swap" rel="stylesheet">
 
     <!--FILES CSS STYLE PAGE-->
-    <link rel="stylesheet" href="../styles/style_web.css">
-    <link rel="stylesheet" href="../styles/style_remote.css">
+    <link rel="stylesheet" href="../static/styles/style_web.css">
+    <link rel="stylesheet" href="../static/styles/style_remote.css">
 
     <!--ICONS WEB STYLES FREE-->
-    <link rel="icon" href="../images/icono_azul.png">
+    <link rel="icon" href="../static/images/icono_azul.png">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
     <title>Control Remoto</title>
@@ -36,27 +36,18 @@
         <nav class="header_options">
             <ul class="options_page">
                 <li>
-                    <a href="#">Opción 1</a>
+                    <a href="#">Fuentes / Recursos</a>
                     <ul class="secundary_options">
-                        <li><a href="#">Subopción 1.1</a></li>
-                        <li><a href="#">Subopción 1.2</a></li>
-                        <li><a href="#">Subopción 1.3</a></li>
+                        <li><a href="https://www.espressif.com/en/products/socs/esp32">ESP 32 WiFi</a></li>
+                        <li><a href="https://flask.palletsprojects.com/">Flask</a></li>
+                        <li><a href="https://axios-http.com/docs/intro">Axios</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Opción 2</a>
+                    <a href="#">Índice</a>
                     <ul class="secundary_options">
-                        <li><a href="#">Subopción 2.1</a></li>
-                        <li><a href="#">Subopción 2.2</a></li>
-                        <li><a href="#">Subopción 2.3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Opción 3</a>
-                    <ul class="secundary_options">
-                        <li><a href="#">Subopción 3.1</a></li>
-                        <li><a href="#">Subopción 3.2</a></li>
-                        <li><a href="#">Subopción 3.3</a></li>
+                        <li><a href="#Control Remoto">Control Remoto</a></li>
+                        <li><a href="#Indicaciones Básicas">Indicaciones Básicas</a></li>
                     </ul>
                 </li>
             </ul>
@@ -79,7 +70,7 @@
 
             <nav class="menu__side" id="menu_side">
                 <div class="name__page">
-                    <img src="../images/icono.png" title="Logo">
+                    <img src="../static/images/icono.png" title="Logo">
                     <i title="Logo"></i>
                     <h4>
                         Araña robótica controlada por web
@@ -136,7 +127,7 @@
             Comandos para controlar la araña y sus accesorios
         </p>
 
-        <h2 class="tag2">
+        <h2 class="tag2" id="Control Remoto">
             Control Remoto
         </h2>
         <!--END CONTENT RESUME PAGE-->
@@ -144,20 +135,24 @@
         <!--START BUTTONS CONTROL REMOTE-->
         <div class="console_container">
             <div class="inf_receive">
+                <!--
                 <div class="distance_sensor design">
-                    distancia
+                    Auxiliar
                 </div>
+                -->
                 <div class="video_box design">
-                    vídeo
+                    Vídeo
                 </div>
+                <!--
                 <div class="ambient_sensor">
                     <div class="temperature design">
-                        temperature
+                        Auxiliar
                     </div>
                     <div class="humidity design">
-                        humidity
+                        Auxiliar
                     </div>
                 </div>
+                -->
             </div>
 
             <div class="buttons">
@@ -170,7 +165,7 @@
                 <div class="buttons_moves design">
                     <button id="showKnobs">Movimiento<br>Articular</button>
                     <div class="knobs">
-                        <div class="knob_container">
+                        <div class="knob_container 1" data-servo-id="0">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -179,10 +174,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 2" data-servo-id="1">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -191,10 +186,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 3" data-servo-id="2">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -203,10 +198,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 4" data-servo-id="3">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -215,10 +210,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 5" data-servo-id="4">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -227,10 +222,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 6" data-servo-id="5">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -239,10 +234,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 7" data-servo-id="6">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -251,10 +246,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 8" data-servo-id="7">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -263,10 +258,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 9" data-servo-id="8">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -275,10 +270,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 10" data-servo-id="9">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -287,10 +282,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 11" data-servo-id="10">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -299,10 +294,10 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
 
-                        <div class="knob_container">
+                        <div class="knob_container 12" data-servo-id="11">
                             <div class="knob_box">
                                 <div class="knob_path">
                                     <div class="pointer_mark"></div>
@@ -311,7 +306,7 @@
                                     <div class="knob"></div>
                                 </div>
                             </div>
-                            <p class="value_degree">0°</p>
+                            <p class="value_degree">35°</p>
                         </div>
                     </div>
                 </div>
@@ -326,16 +321,27 @@
         <!--END BUTTONS CONTROL REMOTE-->
 
         <!--START CONTENT RESUME PAGE-->
-        <h2 class="tag2">
+        <h2 class="tag2" id="Indicaciones Básicas">
             Indicaciones Básicas
         </h2>
 
         <p class="text">
             <ul class="text">
-                <li>Los "knobs" o "perillas" desplegados con el botón movimiento articular, representan cada division de movimiento en la araña, cada servo, las filasson la articulación y las columnas representan las partas, iniciando desde el servo en la base del cuerpo y conectando con la primer "perilla" de arriba abajo, las patas tienen un número asignado, con lo cual corresponde con la primer fila el primer número.</li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    Los "knobs" o "perillas" desplegados con el botón movimiento articular, representan cada division de movimiento en la araña, cada servo, las filasson la articulación y las columnas representan las partas, iniciando desde el servo en la base del cuerpo y conectando con la primer "perilla" de arriba abajo, las patas tienen un número asignado, con lo cual corresponde con la primer fila el primer número.
+                    <br><br>
+                </li>
+                <li>
+                    Los joystick, son una propuesta y están de forma auiliar, por si se quiere agregar alguna otra funcionalidad.
+                    <br><br>
+                </li>
+                <li>
+                    La finalidad de estos controles es tener una base para controlar el robot de forma remota a través de una red WiFi, además como accesorio la disponibilidad de una camara que se le agrega a la página.
+                    <br><br>
+                </li>
+                <li>
+                    En total son 12 servos de 180° por algunas limitantes se maneja de 35° a 110°.
+                </li>
             </ul>
         </p>
         <!--END CONTENT RESUME PAGE-->
@@ -347,16 +353,16 @@
         <footer class="footer_body">
 
             <div class="social">
-                <a href="#">
+                <a href="https://www.instagram.com/sebastian05_cys?igsh=MW5jODd2OWljOWVlaA==">
                     <i class="fa-brands fa-instagram" title="Instagram"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.snapchat.com/add/yuban_camac2019?share_id=BtnmcotmYiE&locale=fr-FR">
                     <i class="fa-brands fa-snapchat" title="Snapchat"></i>
                 </a>
-                <a href="#">
+                <a href="https://x.com/camacho_yuban?t=MqdFYgKTjlyr4yPoxI_UYg&s=09">
                     <i class="fa-brands fa-x-twitter" title="Twitter"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.facebook.com/yuban.camacho.39?mibextid=ZbWKwL">
                     <i class="fa-brands fa-facebook-f" title="Facebook"></i>
                 </a>
             </div>
@@ -369,7 +375,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="programming.html">
                             About
                         </a>
                     </li>
@@ -379,12 +385,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.freeprivacypolicy.com/live/a20197ca-d6cc-4cda-bb95-25f29ade460f">
                             Terms
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.freeprivacypolicy.com/live/1f654583-6a9b-447e-8425-9addceb96c48">
                             Privacy Policy
                         </a>
                     </li>
@@ -397,7 +403,7 @@
     </div>
     <!--END FOOTER-->
 
-    <script src="../script/js_web.js"></script>
-    <script src="../script/remote.js"></script>
+    <script src="../static/script/js_web.js"></script>
+    <script src="../static/script/remote.js"></script>
 </body>
 </html>

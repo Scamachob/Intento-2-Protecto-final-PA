@@ -1,0 +1,267 @@
+.body_main {
+    border-radius: 12.5px;
+    background-color: #e2e2e2;
+    margin: 50px 30px 70px 90px;
+    border-top: 3px solid #fbff00;
+    border-left: 3px solid #00ff22;
+    border-right: 3px solid #ff0000;
+    border-bottom: 3px solid #007BFF;
+}
+
+.tittle {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 35px;
+    color: #000000;
+    letter-spacing: 25px;
+    font-family: "Laila", serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0 #da5555, -3px 3px 0 #c2b82c, 3px -3px 0 #56c547, -3px -3px 0 #5388ce;
+}
+
+.tittle::after {
+    content: "arcw";
+    border-top: 15px solid #00ff22;
+    border-left: 15px solid #ff0000;
+    border-right: 15px solid #007BFF;
+    border-bottom: 15px solid #fbff00;
+}
+
+.text {
+    color: #550f0f;
+}
+
+.secondTittle {
+    font-size: 50px;
+    color: #1D2326;
+    margin-bottom: -20px;
+    font-family: "Laila", serif;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 0 #da5555, -2px 2px 0 #c2b82c, 2px -2px 0 #56c547, -2px -2px 0 #5388ce;
+}
+
+.zero_tittle {
+    text-align: center;
+}
+
+.first {
+    text-align: end;
+    margin-right: 50px;
+}
+
+.second {
+    margin-left: 50px;
+}
+
+.paragraph {
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 400;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.content {
+    display: flex;
+    margin: 25px;
+    text-align: center;
+}
+
+.images {
+    gap: 15px;
+    display: flex;
+    padding: 0 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 15px;
+    border-radius: 3.125px;
+}
+
+.image {
+    border-left: 2px solid #00ff22;
+    border-top: 2px solid #fbff00;
+    border-right: 2px solid #ff0000;
+    border-bottom: 2px solid #007BFF;
+    box-shadow: 1px -2px 5px #da5555, -2px 1px 5px #c2b82c, 0 3px 10px #56c547, 3px 0 10px #5388ce;
+}
+
+.zero {
+    text-align: center;
+}
+
+.zero_one {
+    width: 550px;
+    height: 400px;
+}
+
+.one {
+    width: 135px;
+    height: 225px;
+}
+
+.two {
+    width: 90px;
+    height: 225px;
+}
+
+.three {
+    width: 250px;
+    height: 225px;
+}
+
+.resume {
+    padding: 10px 0;
+    font-family: "Laila", serif;
+}
+
+.overview {
+    font-size: 15px;
+}
+
+.partTwo {
+    margin: 0 10px;
+    text-align: right;
+}
+
+.img {
+    display:block;
+}
+
+.content_img {
+    gap: 20px;
+    display: flex;
+}
+
+.one_two {
+    width: 240px;
+    height: 200px;
+}
+
+.two_two {
+    width: 500px;
+    height: 175px;
+}
+
+.three_two {
+    width: 240px;
+    height: 200px;
+}
+
+.four {
+    width: 500px;
+    height: 275px;
+}
+
+.five {
+    width: 500px;
+    height: 275px;
+}
+
+.six {
+    margin-left: 250px;
+    width: 250px;
+    height: 175px;
+}
+
+.over_six {
+    margin-left: 250px;
+}
+
+.res_five {
+    text-align: right;
+    margin-left: 50px;
+}
+
+.res_six {
+    text-align: left;
+    margin-right: 50px;
+}
+
+@media (max-width: 1250px) {
+    .body_main {
+        margin: 20px 10px 110px 10px;
+    }
+    .tittle {
+        font-size: 60px;
+        letter-spacing: 20px;
+        margin-bottom: 35px;
+    }
+    .secondTittle {
+        font-size: 35px;
+    }
+    .first {
+        margin-right: 0;
+    }
+    .second {
+        margin-left: 0;
+    }
+    .paragraph {
+        font-size: 12.5px;
+        line-height: 1.5;
+    }
+    .content {
+        display: inline;
+        margin: 25px;
+    }
+    .images {
+        display: inline;
+    }
+    .content_img {
+        display: inline;
+    }
+    .zero_one {
+        width: 350px;
+        height: 250px;
+    }
+    .one {
+        width: 80px;
+        height: 175px;
+    }
+    .two {
+        width: 50px;
+        height: 175px;
+    }
+    .three {
+        width: 180px;
+        height: 175px;
+    }
+    .resume {
+        font-size: 7.5px;
+    }
+    .overview {
+        font-size: 12px;
+    }
+    .one_two {
+        width: 375px;
+        height: 250px;
+    }
+    .two_two {
+        width: 375px;
+        height: 250px;
+    }
+    .three_two {
+        width: 375px;
+        height: 250px;
+    }
+    .four {
+        width: 375px;
+        height: 250px;
+    }
+    .five {
+        width: 375px;
+        height: 250px;
+    }
+    .six {
+        width: 375px;
+        height: 250px;
+        margin-left: 0;
+    }
+    .over_six {
+        margin-left: 0;
+    }
+    .res_five {
+        margin-left: 0;
+    }
+    .res_six {
+        margin-right: 0;
+    }
+}

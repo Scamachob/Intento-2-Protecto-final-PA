@@ -1,0 +1,116 @@
+.body_main {
+    height: 1500px;
+    font-size: 18px;
+    font-family: "Play";
+    color: #D9DBD5;
+    padding-top: 70px;
+    margin-bottom: 1100px;
+    background: radial-gradient(circle, #D9304F, #D9042B, #73022C, #2b0020);
+}
+
+.codePart {
+    height: fit-content;
+    border-radius: 0 6.25px;
+    border-bottom: 1px solid #4FD9E6;
+    background: radial-gradient(circle, #044bd9d5, #03258cc7, #020f59af, #2b0020);
+}
+
+.coding {
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+pre {
+    height: 350px;
+    width: fit-content;
+}
+
+code {
+    height: 350px;
+    font-size: 12px;
+    scrollbar-width: none;
+    font-family: "Orbitron";
+    border-radius: 12.5px 0;
+    border: 1px solid #4FD9E6;
+}
+
+.codeOne {
+    width: 250px;
+}
+
+.tittleText {
+    position: relative;
+    text-align: center;
+}
+
+.titlesCode {
+    font-size: 35px;
+    position: relative;
+    letter-spacing: 20px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: radial-gradient(circle, #2a790a 5%, #aaaf07, #f1f81a, #fffb00);
+    -webkit-background-clip: text;
+}
+
+.tittleText::before {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, #141414 5%, #1f2736, #707e7e, #F2EBC7, #707e7e, #1f2736, #141414 95%);
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.titleMain {
+    position: relative;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: radial-gradient(circle, #2a790a 5%, #aaaf07, #f1f81a, #fffb00);
+    -webkit-background-clip: text;
+}
+
+.title::before {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, #141414 5%, #1f2736, #707e7e, #F2EBC7, #707e7e, #1f2736, #141414 95%);
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    color: #02074b;
+}
+
+.image_content {
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.dos {
+    width: 100px;
+}
+
+@media (max-width: 1000px) {
+    .body_main {
+        font-size: 14px;
+        margin-bottom: 120px;
+    }
+}

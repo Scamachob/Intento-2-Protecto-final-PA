@@ -10,11 +10,12 @@
 body {
     display:block;
     text-align: justify;
-    background: #1a0014;
+    background: #2b0020;
 }
 
 .head {
     display: flex;
+    z-index: 100;
     position: relative;
     justify-content: center;
     font-family: 'Nova Slim';
@@ -27,7 +28,7 @@ body {
     height: fit-content;
     border: 2px solid #4FD9E6;
     border-radius: 0 0 50px 50px;
-    background-color: #150924;
+    background-color: #140427;
     justify-content: space-between;
 }
 
@@ -190,6 +191,7 @@ a.selected {
  }
 
 .menu__side_move {
+    z-index: 100;
     width: 230px;
     border-radius: 0 25px 25px 0;
 }
@@ -300,6 +302,7 @@ h1 {
         background-color: #1a0014;
     }
     .menu_location {
+        z-index: 100;
         position: fixed;
     }
     .icon__menu {
@@ -323,7 +326,7 @@ h1 {
     }
     .options__menu {
         margin-left: 15px;
-    }    
+    }
     .options__menu .option {
         margin-top: 25px;
     }

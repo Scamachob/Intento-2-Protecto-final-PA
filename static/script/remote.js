@@ -7,11 +7,11 @@ const backup = document.querySelectorAll('.backup');
 const knob = document.querySelectorAll('.knob');
 const valueDegrees = document.querySelectorAll('.value_degree');
 
-const min = 0;
-const max = 180;
+const min = 35;
+const max = 110;
 let value = 0;
-const fullActionAngle = 180;
-const startAngle = -90;
+const fullActionAngle = 110;
+const startAngle = -55;
 
 knob.forEach((knob, index) => {
     knob.addEventListener('click', (e) => {

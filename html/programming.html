@@ -1,0 +1,2248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--FONTS TYPES WEB FREE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Julee&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Protest+Revolution&lay=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Play:wght@400;700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+    <!--STYLES CODING TEXT SECTIONS-->
+    <link rel="stylesheet" href="../static/highlight/styles/github-dark-dimmed.min.css">
+
+    <!--FILES CSS STYLE PAGE-->
+    <link rel="stylesheet" href="../static/styles/style_web.css">
+    <link rel="stylesheet" href="../static/styles/style_programming.css">
+
+    <!--ICONS WEB STYLES FREE-->
+    <link rel="icon" href="../static/images/icono_azul.png">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <title>Código</title>
+</head>
+
+<body>
+    <!--START HEADER-->
+    <header class="head">
+        <nav class="header_options">
+            <ul class="options_page">
+                <li>
+                    <a href="#">Fuentes / Recursos</a>
+                    <ul class="secundary_options">
+                        <li><a href="https://elcodigoascii.com.ar/">ASCII</a></li>
+                        <li><a href="https://css-tricks.com/">CSS</a></li>
+                        <li><a href="https://html.com/">HTML</a></li>
+                        <li><a href="https://nodejs.org/en">JS</a></li>
+                        <li><a href="https://docs.python.org/3/tutorial/index.html">Python</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Índice</a>
+                    <ul class="secundary_options">
+                        <li><a href="#Python">Python</a></li>
+                        <li><a href="#MicroPython">MicroPython</a></li>
+                        <li><a href="#HTML">HTML</a></li>
+                        <li><a href="#CSS">CSS</a></li>
+                        <li><a href="#JavaScript">JavaScript</a></li>
+                        <li><a href="#Códigos">Códigos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--END HEADER-->
+
+    <!--START MENU-->
+    <div class="location_panel_side">
+
+        <div class="panel_location">
+            <div class="panel">
+                <div class="icon__menu">
+                    <i class="fa-regular fa-snowflake" title="menú" id="btn_open"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu_location">
+
+            <nav class="menu__side" id="menu_side">
+                <div class="name__page">
+                    <img src="../static/images/icono.png" title="Logo">
+                    <i title="Logo"></i>
+                    <h4>
+                        Araña robótica controlada por web
+                    </h4>
+                </div>
+
+                <div class="options__menu">
+                    <ul>
+                        <li>
+                            <a href="/html/index.html">
+                                <div class="option">
+                                    <i class="fa-solid fa-flag-checkered" title="Inicio"></i>
+                                    <h4>
+                                        Inicio
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/html/remote_control.html">
+                                <div class="option">
+                                    <i class="fa-solid fa-gamepad" title="Control Remoto"></i>
+                                    <h4>
+                                        Control Remoto
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../html/programming.html" class="selected">
+                                <div class="option">
+                                    <i class="fa-solid fa-laptop-code" title="Programación"></i>
+                                    <h4>
+                                        Programación
+                                    </h4>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--END MENU-->
+
+    <!--START BODY-MAIN CONTENT-->
+    <main class="body_main" id="body">
+        <!--START CONTENT RESUME PAGE-->
+        <p>
+            <div class="title">
+                <div class="titleMain">
+                    <h1>
+                        Programación desarrollada
+                    </h1>
+                </div>
+            </div>
+            <br><br>
+
+            Se implementan diferrentes lenguajes, python, micro python, html, css, y javascript, principalmente. Además, también se pretende poder almacenar grabaciones y fotografías, según así se requiera, con el robot, de entre las aplicaciones está manejar archivos de tipo cvs.
+            <br><br>
+
+            <img src="../static/images/python_logo.png" title="python" class="image_content">
+
+            <h3 class="titles" id="Python">
+                Python:
+            </h3>
+
+            Usado principalmente para diseñar la base de datos que permitira manejar los archivos cvs, en este tipo de formato se almacenara la información adquirida de la Araña Robot, entre la que está la recolectada por el sensor de humedad y temperatura, y por el sensor de ultrasonido, la distancia cuando se encuentre cerca o este acercando a paredes u obstaculos. Al ser Python un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning (ML). Desarrollar códigos utilizando Python es eficiente, siendo fácil de aprender, también permite la ejecución en muchas plataformas diferentes. Así, el software Python, se descarga gratis, se integra bien a todos los tipos de sistemas, y aumenta la velocidad del desarrollo.
+            <br><br>
+
+            <img src="../static/images/micro-python.jpg" title="micro-python" class="image_content">
+
+            <h3 class="titles" id="MicroPython">
+                MicroPython:
+            </h3>
+
+            Usado para programar la araña y todo el funcionamiento de la misma, desde los servomotores que ejecutan los movimientos de las extremidades, el microprocesador ESP32 Cam, la ESP32 clásica, que componen entre ambas los cerebros del robot, así mismo, a través de estos los sensores y demás funcionamientos. A parte de ser una versión adaptada de Python para microcontroladores, es un lenguaje interpretado, o, no se compila para ejecutarse sino que se interpreta durante su ejecución, siendo una heerramienta útil para proyectos que requieran controlar las entradas/salidas (inputs/outputs) de un microcontrolador, tomando lecturas de señales analógicas y digitales, generando señales PWM, control de motores y servomotores, entre otros. Además, en microcontroladores como la ESP32  también es posible conexiones de Red vía WiFi y Bluetooth.
+            <br><br>
+
+            <img src="../static/images/html.png" title="html icon" class="image_content dos">
+
+            <h3 class="titles" id="HTML">
+                HTML:
+            </h3>
+
+            Usado para desarrollar una pagina web y el contenido en esta. Es básicamente donde se ha escrito y estructurado lo que se quería mostrar en este sitio, todo lo que está aquí sea informativo, imagenes, videos, entre otros recursos que se encuentren, se realizo en html. Por medio de este Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language, se empieza con la parte más básica que compone el diseño de una página web. Pues, define el significado y la estructura del contenido web. Aunque "Hipertexto" se refiere a los vinculos que conectan páginas web entre sí, ya sea dentro de un único sitio o varios, también se debe tener en consideración que al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, empieza a ser un participante activo en la World Wide Web (Red Informática Mundial).
+            <br><br>
+
+            <img src="../static/images/css.png" title="css icon" class="image_content dos">
+
+            <h3 class="titles" id="CSS">
+                CSS:
+            </h3>
+
+            Diseña la pagina Web y el aspecto que esta tendrá, la forma en que se verá, ajustando colores, tipos de letra, margenes, algunas transiciones, y en general la apariencia que se le pretenda dar. Una aclaración, CSS significa (Hojas de estilo en cascada) y parten de la idea concreta de aplicar estilos a uno o varios documentos (HTML, páginas webs) de forma más automática y masiva. Se le denomina de esta forma porque se lee, procesa y aplica el código desde arriba hacia abajo, manteniendo una secuencia denominada herencia, y en el caso de existir ambigüedad,entendido como código que se contradice, existen normas para resolver dichas ambigüedades.
+            <br><br>
+
+            <img src="../static/images/js.png" title="java script" class="image_content dos">
+
+            <h3 class="titles" id="JavaScript">
+                JavaScript:
+            </h3>
+
+            Permite a los sitios web responder con acciones del usuario, clics, desplazamientos, y comandos de teclado, para proporcionar una experiencia interactiva. Ejemplos destacados e incluido en este sitio, incluye menús desplegables, otros son carruseles de imágenes, y validación de formularios. Por lo tanto, en este lenguaje de programación o de secuencias de comandos, se implementará funciones "complejas" en la página web, para que de esta forma la página web haga algo más que mostrar información, sacando ventaja de sus aplicaciones,ya sea mostrar oportunas actualizaciones de contenido, mapas interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc., es necesario usar JavaScript en el dinamismo de las páginas.
+            <br><br>
+        </p>
+        <!--END CONTENT RESUME PAGE-->
+
+        <div class="codePart" id="Códigos">
+            <br>
+            <div class="tittleText">
+                <div class="titlesCode">CSS</div>
+            </div>
+
+            <div class="coding">
+                <pre class="code_block">
+                    <code class="codeOne">
+                        &ast; &lbrace;
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                            font-style: normal;
+                            text-decoration: none;
+                            box-sizing: border-box;
+                        &rbrace;
+
+                        body &lbrace;
+                            display:block;
+                            text-align: justify;
+                            background: &num;2b0020;
+                        &rbrace;
+
+                        .head &lbrace;
+                            display: flex;
+                            z-index: 100;
+                            position: relative;
+                            justify-content: center;
+                            font-family: 'Nova Slim';
+                        &rbrace;
+
+                        .header_options &lbrace;
+                            display: flex;
+                            position: fixed;
+                            width: fit-content;
+                            height: fit-content;
+                            border: 2px solid &num;4FD9E6;
+                            border-radius: 0 0 50px 50px;
+                            background-color: &num;140427;
+                            justify-content: space-between;
+                        &rbrace;
+
+                        .options_page &lbrace;
+                            margin: 10px 15px;
+                        &rbrace;
+
+                        .options_page > li &lbrace;
+                            margin: 0 25px;
+                            display: inline-block;
+                        &rbrace;
+
+                        .options_page > li > a &lbrace;
+                            color: &num;298894;
+                        &rbrace;
+
+                        .options_page > li > a:hover &lbrace;
+                            color: &num;4FD9E6;
+                        &rbrace;
+
+                        .secundary_options &lbrace;
+                            display: none;
+                            position: fixed;
+                            padding: 10px;
+                            margin-top: 15px;
+                            border: 2px solid &num;4FD9E6;
+                            border-radius: 0 25px 0 25px;
+                            background-color: &num;150924;
+                        &rbrace;
+
+                        .secundary_options > li > a &lbrace;
+                            display: flex;
+                            margin: 5px 0;
+                            font-size: 20px;
+                            color:&num;298894;
+                            font-family: "Caveat";
+                        &rbrace;
+
+                        .secundary_options > li > a:hover &lbrace;
+                            color: &num;4FD9E6;
+                        &rbrace;
+
+                        .panel &lbrace;
+                            left: 5px;
+                            width: 55px;
+                            height: 55px;
+                            z-index: 200;
+                            position: fixed;
+                            border-radius: 100%;
+                            top: calc(50% - 205px);
+                            border: 2px solid &num;4FD9E6;
+                            background-color: &num;150924;
+                        &rbrace;
+
+                        .icon__menu &lbrace;
+                            width: 100%;
+                            display: flex;
+                            height: 100%;
+                            cursor: pointer;
+                            font-size: 35px;
+                            position: relative;
+                            color: &num;298894;
+                            align-items: center;
+                            justify-content: center;
+                        &rbrace;
+
+                        .icon__menu:hover &lbrace;
+                            color: &num;4FD9E6;
+                        &rbrace;
+
+                        .menu__side &lbrace;
+                            top: 50%;
+                            width: 75px;
+                            bottom: 50%;
+                            height: 270px;
+                            position: fixed;
+                            margin: auto 0;
+                            overflow: hidden;
+                            color: &num;FFE2A2;
+                            background: &num;150924;
+                            border: 2px solid &num;4FD9E6;
+                            border-top-right-radius: 50px;
+                            border-bottom-right-radius: 50px;
+                        &rbrace;
+
+                        .name__page &lbrace;
+                            display: flex;
+                            position: relative;
+                            margin-top: 15px;
+                            height: fit-content;
+                            align-items: center;
+                            padding-right: 15px;
+                            background-color: &num;4C55C5;
+                        &rbrace;
+
+                        .name__page img &lbrace;
+                            margin-left: 5px;
+                        &rbrace;
+
+                        .name__page h4 &lbrace;
+                            display: flex;
+                            height: 64px;
+                            position: relative;
+                            margin-left: 5px;
+                            font-weight: 100;
+                            text-align: center;
+                            align-items: center;
+                            text-transform: capitalize;
+                            font-family: 'Protest Revolution';
+                        &rbrace;
+
+                        .options__menu &lbrace;
+                            margin-left: 25px;
+                        &rbrace;
+
+                        .options__menu a &lbrace;
+                            color: &num;298894;
+                            font-family: 'Julee';
+                        &rbrace;
+
+                        .options__menu a:hover &lbrace;
+                            font-size: 20px;
+                            color: &num;4fd9e6;
+                            font-family: "Teko";
+                            text-transform: uppercase;
+                        &rbrace;
+
+                        .options__menu .option &lbrace;
+                            display: flex;
+                            margin-top: 35px;
+                        &rbrace;
+
+                        .options__menu .option i &lbrace;
+                            width: 5px;
+                            margin-right: 40px;
+                        &rbrace;
+
+                        .options__menu .option h4 &lbrace;
+                            font-weight: 300;
+                            white-space: nowrap;
+                        &rbrace;
+
+                        a.selected &lbrace;
+                            position: relative;
+                            color: &num;4C55C5;
+                        &rbrace;
+
+                        .selected:before &lbrace;
+                            top: 5px;
+                            right: 15px;
+                            width: 2px;
+                            content: "";
+                            height: 35px;
+                            position: absolute;
+                            background: &num;4C55C5;
+                        &rbrace;
+
+                        .selected:hover::before &lbrace;
+                            background: &num;4fd9e6;
+                        &rbrace;
+
+                        .menu__side_move &lbrace;
+                            z-index: 100;
+                            width: 230px;
+                            border-radius: 0 25px 25px 0;
+                        &rbrace;
+
+                        main &lbrace;
+                            margin: 70px 30px 70px 90px;
+                            padding: 30px 50px 20px 50px;
+                        &rbrace;
+
+                        h1 &lbrace;
+                            margin: 5px 0 25px 0;
+                        &rbrace;
+
+                        .footer_page &lbrace;
+                            bottom: 0;
+                            display: flex;
+                            position: relative;
+                            justify-content: center;
+                        &rbrace;
+
+                        .footer_body &lbrace;
+                            bottom: 0;
+                            display: flex;
+                            position: fixed;
+                            padding: 10px;
+                            color: &num;298894;
+                            height: fit-content;
+                            max-width: fit-content;
+                            border: 2px solid &num;4fd9e6;
+                            border-radius: 50px 50px 0 0;
+                            background-color: &num;150924;
+                        &rbrace;
+
+                        .footer_body .footer_icon &lbrace;
+                            padding: 0;
+                            display: flex;
+                            margin: 0 15px;
+                            list-style-type: none;
+                            justify-content: center;
+                        &rbrace;
+
+                        .footer_body li &lbrace;
+                            padding: 0 5px;
+                        &rbrace;
+
+                        .footer_body ul a &lbrace;
+                            color: inherit;
+                            font-family: 'Bebas Neue';
+                            text-transform: uppercase;
+                        &rbrace;
+
+                        .footer_body ul a:hover &lbrace;
+                            color: &num;4fd9e6;
+                        &rbrace;
+
+                        .footer_body .social &lbrace;
+                            display: flex;
+                            text-align: center;
+                            line-height: 30px;
+                            margin-left: 15px;
+                        &rbrace;
+
+                        .footer_body .social > a &lbrace;
+                            width: 35px;
+                            height: 35px;
+                            color: inherit;
+                            margin: 0 5px;
+                            font-size: 20px;
+                            border-radius: 50px;
+                            border: 2px solid &num;298894;
+                        &rbrace;
+
+                        .footer_body .social > a:hover &lbrace;
+                            color: &num;4FD9E6;
+                            border-color: &num;4FD9E6;
+                        &rbrace;
+
+                        .copyright &lbrace;
+                            font-size: 12px;
+                            font-weight: 700;
+                            text-align: center;
+                            color: &num;298894;
+                            text-transform: uppercase;
+                            font-family: 'Dancing Script';
+                        &rbrace;
+
+                        .footer_two_elements &lbrace;
+                            margin-right: 10px;
+                        &rbrace;
+
+                        &commat;media (max-width: 1000px) &lbrace;
+                            .header_options &lbrace;
+                                display: contents;
+                                position: absolute;
+                            &rbrace;
+                            .options_page &lbrace;
+                                margin: 0;
+                            &rbrace;
+                            .options_page > li &lbrace;
+                                margin: 10px;
+                            &rbrace;
+                            .panel &lbrace;
+                                left: 0;
+                                top: 5px;
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 0 25px 25px 0;
+                                background-color: &num;1a0014;
+                            &rbrace;
+                            .menu_location &lbrace;
+                                z-index: 100;
+                                position: fixed;
+                            &rbrace;
+                            .icon__menu &lbrace;
+                                font-size: 40px;
+                            &rbrace;
+                            .menu__side &lbrace;
+                                top: 25px;
+                                width: 55px;
+                                height: 240px;
+                                position: relative;
+                                border-radius: 0 25px 25px 0;
+                            &rbrace;
+                            .name__page &lbrace;
+                                height: 50px;
+                            &rbrace;
+                            .name__page img &lbrace;
+                                width: 50px;
+                                height: 50px;
+                                margin-left: 0;
+                                margin-right: 10px;
+                            &rbrace;
+                            .options__menu &lbrace;
+                                margin-left: 15px;
+                            &rbrace;
+                            .options__menu .option &lbrace;
+                                margin-top: 25px;
+                            &rbrace;
+                            .options__menu .option i &lbrace;
+                                margin-right: 50px;
+                            &rbrace;
+                            .selected:before &lbrace;
+                                right: 5px;
+                                width: 2px;
+                            &rbrace;
+                            .menu__side_move &lbrace;
+                                width: 55px;
+                                display: none;
+                            &rbrace;
+                            main &lbrace;
+                                padding: 15px;
+                                margin: 20px 15px 100px 15px;
+                            &rbrace;
+                            h1 &lbrace;
+                                margin: 5px;
+                            &rbrace;
+                            .footer_body &lbrace;
+                                bottom: 0;
+                                padding: 0;
+                                position: absolute;
+                                align-items: center;
+                                flex-direction: column;
+                            &rbrace;
+                            .footer_body .footer_icon &lbrace;
+                                display: flex;
+                                margin: 5px 0;
+                            &rbrace;
+                            .footer_body li &lbrace;
+                                padding: 0 5px;
+                            &rbrace;
+                            .footer_body .social &lbrace;
+                                line-height: 30px;
+                            &rbrace;
+                            .footer_body .social > a &lbrace;
+                                margin: 5px;
+                            &rbrace;
+                            .footer_two_elements &lbrace;
+                                margin-right: 0px;
+                            &rbrace;
+                        &rbrace;
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        .body_main &lbrace;
+                            border-radius: 12.5px;
+                            background-color: &num;e2e2e2;
+                            margin: 50px 30px 70px 90px;
+                            border-top: 3px solid &num;fbff00;
+                            border-left: 3px solid &num;00ff22;
+                            border-right: 3px solid &num;ff0000;
+                            border-bottom: 3px solid &num;007BFF;
+                        &rbrace;
+                        
+                        .tittle &lbrace;
+                            font-size: 75px;
+                            text-align: center;
+                            margin-top: 35px;
+                            color: &num;000000;
+                            letter-spacing: 25px;
+                            font-family: "Laila", serif;
+                            text-transform: uppercase;
+                            text-shadow: 3px 3px 0 &num;da5555, -3px 3px 0 &num;c2b82c, 3px -3px 0 &num;56c547, -3px -3px 0 &num;5388ce;
+                        &rbrace;
+                        
+                        .tittle::after &lbrace;
+                            content: "arcw";
+                            border-top: 15px solid &num;00ff22;
+                            border-left: 15px solid &num;ff0000;
+                            border-right: 15px solid &num;007BFF;
+                            border-bottom: 15px solid &num;fbff00;
+                        &rbrace;
+                        
+                        .text &lbrace;
+                            color: &num;550f0f;
+                        &rbrace;
+                        
+                        .secondTittle &lbrace;
+                            font-size: 50px;
+                            color: &num;1D2326;
+                            margin-bottom: -20px;
+                            font-family: "Laila", serif;
+                            text-transform: capitalize;
+                            text-shadow: 2px 2px 0 &num;da5555, -2px 2px 0 &num;c2b82c, 2px -2px 0 &num;56c547, -2px -2px 0 &num;5388ce;
+                        &rbrace;
+                        
+                        .zero_tittle &lbrace;
+                            text-align: center;
+                        &rbrace;
+                        
+                        .first &lbrace;
+                            text-align: end;
+                            margin-right: 50px;
+                        &rbrace;
+                        
+                        .second &lbrace;
+                            margin-left: 50px;
+                        &rbrace;
+                        
+                        .paragraph &lbrace;
+                            font-size: 17px;
+                            line-height: 1.25;
+                            font-weight: 400;
+                            font-family: "Montserrat Alternates", sans-serif;
+                        &rbrace;
+                        
+                        .content &lbrace;
+                            display: flex;
+                            margin: 25px;
+                            text-align: center;
+                        &rbrace;
+                        
+                        .images &lbrace;
+                            gap: 15px;
+                            display: flex;
+                            padding: 0 20px;
+                            width: fit-content;
+                            height: fit-content;
+                            margin-right: 15px;
+                            border-radius: 3.125px;
+                        &rbrace;
+                        
+                        .image &lbrace;
+                            border-left: 2px solid &num;00ff22;
+                            border-top: 2px solid &num;fbff00;
+                            border-right: 2px solid &num;ff0000;
+                            border-bottom: 2px solid &num;007BFF;
+                            box-shadow: 1px -2px 5px &num;da5555, -2px 1px 5px &num;c2b82c, 0 3px 10px &num;56c547, 3px 0 10px &num;5388ce;
+                        &rbrace;
+                        
+                        .zero &lbrace;
+                            text-align: center;
+                        &rbrace;
+                        
+                        .zero_one &lbrace;
+                            width: 550px;
+                            height: 400px;
+                        &rbrace;
+                        
+                        .one &lbrace;
+                            width: 135px;
+                            height: 225px;
+                        &rbrace;
+                        
+                        .two &lbrace;
+                            width: 90px;
+                            height: 225px;
+                        &rbrace;
+                        
+                        .three &lbrace;
+                            width: 250px;
+                            height: 225px;
+                        &rbrace;
+                        
+                        .resume &lbrace;
+                            padding: 10px 0;
+                            font-family: "Laila", serif;
+                        &rbrace;
+                        
+                        .overview &lbrace;
+                            font-size: 15px;
+                        &rbrace;
+                        
+                        .partTwo &lbrace;
+                            margin: 0 10px;
+                            text-align: right;
+                        &rbrace;
+                        
+                        .img &lbrace;
+                            display:block;
+                        &rbrace;
+                        
+                        .content_img &lbrace;
+                            gap: 20px;
+                            display: flex;
+                        &rbrace;
+                        
+                        .one_two &lbrace;
+                            width: 240px;
+                            height: 200px;
+                        &rbrace;
+                        
+                        .two_two &lbrace;
+                            width: 500px;
+                            height: 175px;
+                        &rbrace;
+                        
+                        .three_two &lbrace;
+                            width: 240px;
+                            height: 200px;
+                        &rbrace;
+                        
+                        .four &lbrace;
+                            width: 500px;
+                            height: 275px;
+                        &rbrace;
+                        
+                        .five &lbrace;
+                            width: 500px;
+                            height: 275px;
+                        &rbrace;
+                        
+                        .six &lbrace;
+                            margin-left: 250px;
+                            width: 250px;
+                            height: 175px;
+                        &rbrace;
+                        
+                        .over_six &lbrace;
+                            margin-left: 250px;
+                        &rbrace;
+                        
+                        .res_five &lbrace;
+                            text-align: right;
+                            margin-left: 50px;
+                        &rbrace;
+                        
+                        .res_six &lbrace;
+                            text-align: left;
+                            margin-right: 50px;
+                        &rbrace;
+                        
+                        &commat;media (max-width: 1250px) &lbrace;
+                            .body_main &lbrace;
+                                margin: 20px 10px 110px 10px;
+                            &rbrace;
+                            .tittle &lbrace;
+                                font-size: 60px;
+                                letter-spacing: 20px;
+                                margin-bottom: 35px;
+                            &rbrace;
+                            .secondTittle &lbrace;
+                                font-size: 35px;
+                            &rbrace;
+                            .first &lbrace;
+                                margin-right: 0;
+                            &rbrace;
+                            .second &lbrace;
+                                margin-left: 0;
+                            &rbrace;
+                            .paragraph &lbrace;
+                                font-size: 12.5px;
+                                line-height: 1.5;
+                            &rbrace;
+                            .content &lbrace;
+                                display: inline;
+                                margin: 25px;
+                            &rbrace;
+                            .images &lbrace;
+                                display: inline;
+                            &rbrace;
+                            .content_img &lbrace;
+                                display: inline;
+                            &rbrace;
+                            .zero_one &lbrace;
+                                width: 350px;
+                                height: 250px;
+                            &rbrace;
+                            .one &lbrace;
+                                width: 80px;
+                                height: 175px;
+                            &rbrace;
+                            .two &lbrace;
+                                width: 50px;
+                                height: 175px;
+                            &rbrace;
+                            .three &lbrace;
+                                width: 180px;
+                                height: 175px;
+                            &rbrace;
+                            .resume &lbrace;
+                                font-size: 7.5px;
+                            &rbrace;
+                            .overview &lbrace;
+                                font-size: 12px;
+                            &rbrace;
+                            .one_two &lbrace;
+                                width: 375px;
+                                height: 250px;
+                            &rbrace;
+                            .two_two &lbrace;
+                                width: 375px;
+                                height: 250px;
+                            &rbrace;
+                            .three_two &lbrace;
+                                width: 375px;
+                                height: 250px;
+                            &rbrace;
+                            .four &lbrace;
+                                width: 375px;
+                                height: 250px;
+                            &rbrace;
+                            .five &lbrace;
+                                width: 375px;
+                                height: 250px;
+                            &rbrace;
+                            .six &lbrace;
+                                width: 375px;
+                                height: 250px;
+                                margin-left: 0;
+                            &rbrace;
+                            .over_six &lbrace;
+                                margin-left: 0;
+                            &rbrace;
+                            .res_five &lbrace;
+                                margin-left: 0;
+                            &rbrace;
+                            .res_six &lbrace;
+                                margin-right: 0;
+                            &rbrace;
+                        &rbrace;
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        :root &lbrace;
+                            --off-color: &num;003129;
+                            --on-color: &num;0CF25D;
+                            --color-back: &num;F9F33D;
+                            --color-border: &num;FA6918;
+                            --pointer-color: &num;04D939;
+                        &rbrace;
+                        
+                        .tag1 &lbrace;
+                            font-size: 70px;
+                            text-align: center;
+                            color: &num;21a30d;
+                            font-family: "Jersey 15";
+                            text-transform: uppercase;
+                        &rbrace;
+                        
+                        .tag2 &lbrace;
+                            font-size: 50px;
+                            text-align: center;
+                            color: &num;0cb436;
+                            font-family: "Jersey 15";
+                            text-transform: capitalize;
+                        &rbrace;
+                        
+                        .text &lbrace;
+                            color: &num;FFFC00;
+                            font-size: 20px;
+                            text-align: justify;
+                        &rbrace;
+                        
+                        .begin &lbrace;
+                            font-size: 30px;
+                            text-align: center;
+                            text-transform: capitalize;
+                        &rbrace;
+                        
+                        .body_main &lbrace;
+                            font-family: "Macondo";
+                        &rbrace;
+                        
+                        .console_container &lbrace;
+                            gap: 5px;
+                            width: 100%;
+                            display: grid;
+                            height: 550px;
+                            padding: 10px;
+                            position: relative;
+                            border-radius: 3.125px;
+                            border: 3px solid &num;FFF66F;
+                            background-color: &num;5A462E;
+                        &rbrace;
+                        
+                        .design &lbrace;
+                            border-radius: 6.25px;
+                            border: 2px solid &num;FFF66F;
+                            background-color: &num;8A7750;
+                        &rbrace;
+                        
+                        .inf_receive &lbrace;
+                            gap: 5px;
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .distance_sensor &lbrace;
+                            width: 25%;
+                        &rbrace;
+                        
+                        .video_box &lbrace;
+                            width: 50%;
+                        &rbrace;
+                        
+                        .ambient_sensor &lbrace;
+                            gap: 5px;
+                            width: 25%;
+                            display: grid;
+                        &rbrace;
+                        
+                        .temperature &lbrace;
+                            font-size: 20px;
+                        &rbrace;
+                        
+                        .humidity &lbrace;
+                            font-size: 20px;
+                        &rbrace;
+                        
+                        .buttons &lbrace;
+                            gap: 5px;
+                            width: 100%;
+                            display: flex;
+                        &rbrace;
+                        
+                        .joysticks_box &lbrace;
+                            width: 25%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .joystick_base &lbrace;
+                            display: flex;
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            border-radius: 50%;
+                            align-items: center;
+                            justify-content: center;
+                            background: linear-gradient(30deg, &num;D99E32, &num;F28B0C, &num;F2A20C, &num;FFB426, &num;56FF0D, &num;E88F17, &num;FFFF00, &num;D99E32, &num;F28B0C, &num;F2CF66);
+                            border: 3px solid &num;02733E;
+                        &rbrace;
+                        
+                        .joystick_handle &lbrace;
+                            width: 70px;
+                            height: 70px;
+                            cursor: pointer;
+                            position: absolute;
+                            border-radius: 50%;
+                            transition: transform 0.1s;
+                            background: linear-gradient(200deg, &num;02733E, &num;103D18, &num;44C926, &num;77C95F, &num;103D18, &num;44C926, &num;83C724, &num;9AC347);
+                        &rbrace;
+                        
+                        .joystick_handle::before &lbrace;
+                            left: 50%;
+                            top: 50%;
+                            content: '';
+                            width: 63px;
+                            height: 63px;
+                            position: absolute;
+                            border-radius: 50%;
+                            transform: translate(-50%, -50%);
+                            background: linear-gradient(200deg, &num;F2E422, &num;F2CB05, &num;F2B705, &num;F29F05, &num;FFFF00, &num;F28705);
+                        &rbrace;
+                        
+                        .buttons_moves &lbrace;
+                            width: 50%;
+                            text-align: center;
+                        &rbrace;
+                        
+                        .knobs &lbrace;
+                            left: 25%;
+                            right: 25%;
+                            display: none;
+                            row-gap: 5px;
+                            padding: 10px;
+                            margin: 0 auto;
+                            margin-top: 5px;
+                            width: fit-content;
+                            position: absolute;
+                            height: fit-content;
+                            column-gap: 20px;
+                            border-radius: 12.5px;
+                            grid-auto-rows: 100px;
+                            border: 3px solid &num;FA6918;
+                            background-color: &num;ffe958;
+                            grid-template-columns: repeat(4, 100px);
+                        &rbrace;
+                        
+                        .knobs.open &lbrace;
+                            display: grid;
+                        &rbrace;
+                        
+                        &num;showKnobs &lbrace;
+                            padding: 5px;
+                            cursor: pointer;
+                            font-size: 18px;
+                            margin-top: 5px;
+                            width: fit-content;
+                            height: fit-content;
+                            border-radius: 6.25px;
+                            font-family: "Macondo";
+                            color: var(--color-border);
+                            background-color: var(--color-back);
+                            border: 2px solid var(--color-border);
+                        &rbrace;
+                        
+                        &num;showKnobs:hover &lbrace;
+                            font-weight: bold;
+                            border: 3px solid &num;FA6918;
+                        &rbrace;
+                        
+                        .knob_container &lbrace;
+                            width: 100px;
+                            height: 100px;
+                            position: relative;
+                            display: inline-block;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .knob_box &lbrace;
+                            width: 100%;
+                            display: flex;
+                            height: 100%;
+                            position: relative;
+                            align-items: center;
+                            justify-content: center;
+                        &rbrace;
+                        
+                        .knob_path &lbrace;
+                            width: 100px;
+                            height: 100px;
+                            position: absolute;
+                            border-radius: 50%;
+                            background: linear-gradient(to right bottom, &num;731702, &num;023117);
+                            clip-path: path('M14,85 A50 50 0 1 1 85,85 L85,85 A48,48 0 1 0 14,85 Z');
+                        &rbrace;
+                        
+                        .pointer_mark &lbrace;
+                            left: 50%;
+                            width: 0;
+                            height: 80%;
+                            bottom: 25%;
+                            position: relative;
+                            box-shadow: none;
+                            transform-origin: bottom;
+                            transform: translateX(-50%);
+                            transform: rotateZ(-55deg);
+                            background-color: var(--pointer-color);
+                            transition: box-shadow 1s, width 1s, transform 0.5s;
+                        &rbrace;
+                        
+                        .pointer_mark.on &lbrace;
+                            width: 3px;
+                            box-shadow: 3px 0 3px var(--pointer-color), -3px 0 3px var(--pointer-color),
+                            4px 0 6px var(--pointer-color), -4px 0 6px var(--pointer-color),
+                            5px 0 9px var(--pointer-color), -5px 0 9px var(--pointer-color),
+                            6px 0 12px var(--pointer-color), -6px 0 12px var(--pointer-color),
+                            7px 0 15px var(--pointer-color), -7px 0 15px var(--pointer-color);
+                        &rbrace;
+                        
+                        .backup &lbrace;
+                            top: 10px;
+                            width: 65px;
+                            display: flex;
+                            height: 65px;
+                            position: absolute;
+                            align-items: center;
+                            box-shadow: none;
+                            border-radius: 50%;
+                            justify-content: center;
+                            background: var(--off-color);
+                            border: 10px solid transparent;
+                            transition: border 1s, box-shadow 1s;
+                        &rbrace;
+                        
+                        .backup.on &lbrace;
+                            border: 10px solid var(--on-color);
+                            box-shadow: 0 0 10px var(--on-color);
+                        &rbrace;
+                        
+                        .knob &lbrace;
+                            width: 55px;
+                            display: flex;
+                            height: 55px;
+                            position: absolute;
+                            box-shadow: none;
+                            border-radius: 50%;
+                            align-items: center;
+                            justify-content: center;
+                            transition: box-shadow 1s;
+                            background-color: &num;337070;
+                        &rbrace;
+                        
+                        .knob.on &lbrace;
+                            box-shadow: 0 -3px 3px &num;93D94E, inset 0 -2px 2px &num;93D94E;
+                        &rbrace;
+                        
+                        .knob::before &lbrace;
+                            content: '';
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                            position: absolute;
+                            border-radius: 50%;
+                            box-shadow: 0 -10px 30px &num;ffffff 30px &num;000000;
+                            background: linear-gradient(to bottom, &num;011F26, &num;591C21);
+                        &rbrace;
+                        
+                        .knob:active &lbrace;
+                            transform: scale(0.98);
+                        &rbrace;
+                        
+                        .value_degree &lbrace;
+                            width: 50px;
+                            display: flex;
+                            height: 20px;
+                            font-size: 20px;
+                            margin-left: 25%;
+                            color: &num;56A07F;
+                            transition: color 1s;
+                            margin-top: -20px;
+                            border-radius: 12.5px;
+                            justify-content: center;
+                            background-color: var(--off-color);
+                            box-shadow: inset -2px -2px 2px &num;16232E;
+                        &rbrace;
+                        
+                        .value_degree.on &lbrace;
+                            color: var(--on-color);
+                        &rbrace;
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        .body_main &lbrace;
+                            height: 1500px;
+                            font-size: 18px;
+                            font-family: "Play";
+                            color: &num;D9DBD5;
+                            padding-top: 70px;
+                            margin-bottom: 1100px;
+                            background: radial-gradient(circle, &num;D9304F, &num;D9042B, &num;73022C, &num;2b0020);
+                        &rbrace;
+
+                        .codePart &lbrace;
+                            height: fit-content;
+                            border-radius: 0 6.25px;
+                            border-bottom: 1px solid &num;4FD9E6;
+                            background: radial-gradient(circle, &num;044bd9d5, &num;03258cc7, &num;020f59af, &num;2b0020);
+                        &rbrace;
+
+                        .coding &lbrace;
+                            gap: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                        &rbrace;
+
+                        pre &lbrace;
+                            height: 350px;
+                            width: fit-content;
+                        &rbrace;
+
+                        code &lbrace;
+                            height: 350px;
+                            font-size: 12px;
+                            scrollbar-width: none;
+                            font-family: "Orbitron";
+                            border-radius: 12.5px 0;
+                            border: 1px solid &num;4FD9E6;
+                        &rbrace;
+
+                        .codeOne &lbrace;
+                            width: 250px;
+                        &rbrace;
+
+                        .tittleText &lbrace;
+                            position: relative;
+                            text-align: center;
+                        &rbrace;
+
+                        .titlesCode &lbrace;
+                            font-size: 35px;
+                            position: relative;
+                            letter-spacing: 20px;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background: radial-gradient(circle, &num;2a790a 5%, &num;aaaf07, &num;f1f81a, &num;fffb00);
+                            -webkit-background-clip: text;
+                        &rbrace;
+
+                        .tittleText::before &lbrace;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            content: '';
+                            position: absolute;
+                            background: linear-gradient(45deg, &num;141414 5%, &num;1f2736, &num;707e7e, &num;F2EBC7, &num;707e7e, &num;1f2736, &num;141414 95%);
+                        &rbrace;
+
+                        .title &lbrace;
+                            position: relative;
+                            text-align: center;
+                        &rbrace;
+
+                        .titleMain &lbrace;
+                            position: relative;
+                            background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background: radial-gradient(circle, &num;2a790a 5%, &num;aaaf07, &num;f1f81a, &num;fffb00);
+                            -webkit-background-clip: text;
+                        &rbrace;
+
+                        .title::before &lbrace;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            content: '';
+                            position: absolute;
+                            background: linear-gradient(45deg, &num;141414 5%, &num;1f2736, &num;707e7e, &num;F2EBC7, &num;707e7e, &num;1f2736, &num;141414 95%);
+                        &rbrace;
+
+                        h1 &lbrace;
+                            font-size: 55px;
+                            text-transform: uppercase;
+                        &rbrace;
+
+                        h3 &lbrace;
+                            text-align: center;
+                            color: &num;02074b;
+                        &rbrace;
+
+                        .image_content &lbrace;
+                            float: left;
+                            width: 200px;
+                            margin-right: 10px;
+                        &rbrace;
+
+                        .dos &lbrace;
+                            width: 100px;
+                        &rbrace;
+
+                        &commat;media (max-width: 1000px) &lbrace;
+                            .body_main &lbrace;
+                                font-size: 14px;
+                                margin-bottom: 120px;
+                            &rbrace;
+                        &rbrace;
+                    </code>
+                </pre>
+            </div>
+            <br>
+
+            <br>
+            <div class="tittleText">
+                <div class="titlesCode">HTML</div>
+            </div>
+
+            <div class="coding">
+                <pre class="code_block">
+                    <code class="codeOne">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="es"&gt;
+                        
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        
+                            &lt;!--FONTS TYPES WEB FREE--&gt;
+                            &lt;link rel="preconnect" href="https:&frasl;&frasl;fonts.googleapis.com"&gt;
+                            &lt;link rel="preconnect" href="https:&frasl;&frasl;fonts.gstatic.com" crossorigin&gt;
+                            &lt;link rel="stylesheet" href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Julee&display=swap"&gt;
+                            &lt;link rel="stylesheet" href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Nova+Slim&display=swap"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Bebas+Neue&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Protest+Revolution&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Teko:wght@300..700&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Caveat:wght@400..700&family=Protest+Revolution&lay=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"&gt;
+                        
+                            &lt;!--FILES CSS STYLE PAGE--&gt;
+                            &lt;link rel="stylesheet" href="..&frasl;static&frasl;styles&frasl;style_web.css"&gt;
+                            &lt;link rel="stylesheet" href="..&frasl;static&frasl;styles&frasl;style_index.css"&gt;
+                        
+                            &lt;!--ICONS WEB STYLES FREE--&gt;
+                            &lt;link rel="icon" href="..&frasl;static&frasl;images&frasl;icono_azul.png"&gt;
+                            &lt;script src="https:&frasl;&frasl;kit.fontawesome.com&frasl;41bcea2ae3.js" crossorigin="anonymous"&gt;&lt;&frasl;script&gt;
+                        
+                            &lt;title&gt;ARCW&lt;&frasl;title&gt;
+                        &lt;&frasl;head&gt;
+                        
+                        &lt;body&gt;
+                            &lt;!--START HEADER--&gt;
+                            &lt;header class="head"&gt;
+                                &lt;nav class="header_options"&gt;
+                                    &lt;ul class="options_page"&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="#"&gt;Fuentes &frasl; Recursos&lt;&frasl;a&gt;
+                                            &lt;ul class="secundary_options"&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;www.upesy.com&frasl;blogs&frasl;tutorials&frasl;esp32-servo-motor-sg90-on-micropython"&gt;Servos&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;docs.micropython.org&frasl;en&frasl;latest&frasl;"&gt;Mycro Python&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;developer.mozilla.org&frasl;es&frasl;docs&frasl;Learn&frasl;Getting_started_with_the_web"&gt;Creación Web&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;li&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="#"&gt;Índice&lt;&frasl;a&gt;
+                                            &lt;ul class="secundary_options"&gt;
+                                                &lt;li&gt;&lt;a href="#Propósito"&gt;Propósito&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="#Partes de la Araña"&gt;Partes de la Araña&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="#Cuerpo de la Araña"&gt;Cuerpo de la Araña&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="#Componentes"&gt;Componentes&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;li&gt;
+                                    &lt;&frasl;ul&gt;
+                                &lt;&frasl;nav&gt;
+                            &lt;&frasl;header&gt;
+                            &lt;!--END HEADER--&gt;
+                        
+                            &lt;!--START MENU--&gt;
+                            &lt;div class="location_panel_side"&gt;
+                        
+                                &lt;div class="panel_location"&gt;
+                                    &lt;div class="panel"&gt;
+                                        &lt;div class="icon__menu"&gt;
+                                            &lt;i class="fa-regular fa-snowflake" title="menú" id="btn_open"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;div class="menu_location"&gt;
+                        
+                                    &lt;nav class="menu__side" id="menu_side"&gt;
+                                        &lt;div class="name__page"&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;icono.png" title="Logo"&gt;
+                                            &lt;i title="Logo"&gt;&lt;&frasl;i&gt;
+                                            &lt;h4&gt;
+                                                Araña robótica controlada por web
+                                            &lt;&frasl;h4&gt;
+                                        &lt;&frasl;div&gt;
+                        
+                                        &lt;div class="options__menu"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="index.html"  class="selected"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-flag-checkered" title="Inicio"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Inicio
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="remote_control.html"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-gamepad" title="Control Remoto"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Control Remoto
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="programming.html"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-laptop-code" title="Programación"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Programación
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;nav&gt;
+                                &lt;&frasl;div&gt;
+                            &lt;&frasl;div&gt;
+                            &lt;!--END MENU--&gt;
+                        
+                            &lt;!--START BODY-MAIN CONTENT--&gt;
+                            &lt;main class="body_main" id="body"&gt;
+                                &lt;!--START CONTENT RESUME PAGE--&gt;
+                                &lt;h1 class="tittle"&gt;&lt;&frasl;h1&gt;&lt;br&gt;
+                        
+                                &lt;p class="paragraph text"&gt;
+                                    En ARCW, nos enorgullecemos de presentar nuestra innovadora araña robótica cuadrúpeda, diseñada para fusionar la tecnología y la programación de una manera interactiva y emocionante. Este proyecto vanguardista tiene como objetivo principal implementar y demostrar conocimientos avanzados en programación aplicada, permitiendo a los usuarios dar vida y movimiento a nuestra araña mediante una interfaz web intuitiva. La araña ARCW no solo es una herramienta educativa, sino también un dispositivo tecnológico avanzado que ofrece múltiples funciones. Entre sus características destacadas se encuentra una cámara de video integrada, que permite la transmisión en tiempo real, brindando una experiencia visual inmersiva y dinámica. Nuestro enfoque en la programación aplicada a la robótica permite a estudiantes, entusiastas y profesionales explorar y experimentar con control remoto, algoritmos de movimiento y la integración de sensores a través de una plataforma web accesible. Con ARCW, aspiramos a inspirar y equipar a la próxima generación de innovadores en el campo de la robótica y la tecnología.
+                                    &lt;br&gt;&lt;br&gt;
+                        
+                                    &lt;div class="img zero"&gt;
+                                        &lt;img src="..&frasl;static&frasl;images&frasl;araña.png" title="image of the spider" class="image zero_one"&gt;
+                                        &lt;h6 class="text resume"&gt;Imágen de la araña&lt;&frasl;h6&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;p&gt;
+                                &lt;br&gt;&lt;br&gt;
+                        
+                                &lt;h2 class="secondTittle zero_tittle" id="Propósito"&gt;Propósito&lt;&frasl;h2&gt;&lt;br&gt;
+                        
+                                &lt;p class="paragraph text zero_tittle"&gt;
+                                    Diseñar y desarrollar una innovadora araña robótica de vanguardia, capaz de ser controlada de forma remota a través de una interfaz intuitiva en una página web. Este proyecto, destinado a la materia de Programación Aplicada, se centrará en la creación de un sistema robótico sofisticado que permita un control preciso y fluido de cada una de sus extremidades, así como del desplazamiento integral del robot. El desarrollo incluirá la implementación de algoritmos avanzados para el movimiento coordinado y versátil de la araña robótica, posibilitando una variedad de patrones de locomoción que imiten los movimientos naturales de una araña real. Además, se integrará una cámara de alta definición en el cuerpo del robot, cuya transmisión en tiempo real podrá ser visualizada desde la página web, ofreciendo una experiencia interactiva y envolvente para el usuario. Se llevará a cabo una exhaustiva comprobación del sistema de control de las extremidades para garantizar su funcionamiento eficiente y adaptable a diferentes superficies y condiciones. Asimismo, se verificarán y optimizarán las capacidades de transmisión y recepción de la señal de video de la cámara, asegurando una conexión estable y de alta calidad entre la araña robótica y la interfaz web. Este proyecto no solo busca demostrar habilidades técnicas avanzadas en programación y robótica, sino también proporcionar una plataforma educativa y experimental que inspire y facilite futuros desarrollos en el campo de la robótica controlada remotamente. 
+                                &lt;&frasl;p&gt;
+                                &lt;br&gt;&lt;br&gt;
+                        
+                                &lt;h2 class="secondTittle first" id="Partes de la Araña"&gt;partes de la araña&lt;&frasl;h2&gt;
+                        
+                                &lt;div class="content"&gt;
+                                    &lt;div class="images"&gt;
+                                        &lt;div class="img"&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;pata2.png" title="image of the leg first part" class="image one"&gt;
+                                            &lt;h6 class="text resume"&gt;Parte 1 de la zona media para servos&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                        &lt;div class="img"&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;pata3.png" title="image of the leg second part" class="image two"&gt;
+                                            &lt;h6 class="text resume"&gt;Parte 2 de la zona final, tarso&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                        &lt;div class="img"&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;pata1.png" title="image of attached leg parts" class="image three"&gt;
+                                            &lt;h6 class="text resume"&gt;Foto de la extremidad, usando parte 1 y parte 2&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;p class="paragraph text overview"&gt;
+                                        Las imágenes muestran las primeras piezas que conforman las patas de la araña robótica. Estas determinarán la altura de la araña sobre la superficie en la que se encuentre, y el desplazamiento. En la primera foto, vemos la parte central con el esppacio para colocar dos servos unidos a dos componentes adicionales: una articulación conectada a la base (el cuerpo de la araña) y a una parte 1 de la zona media, formando la sección inicial. La segunda foto representa la parte del tarso de una araña, unida a la zona media y completando toda la extremidad. En la tercera foto, se muestra el resultado de la pata sin su base, así, el funcionamiento del servo permitirá el movimiento de la araña al extenderse y contraerse, utilizando la fuerza para desplazarse mediante el apoyo de las patas como puntos fijos de apoyo.
+                                    &lt;&frasl;p&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;div class="content"&gt;
+                                    &lt;p class="paragraph text overview partTwo"&gt;
+                                        Aquí se presenta el torso de la araña, este con la capacidad suficiente para soportar el peso de los componentes a usar para su funcionamiento, estos son: El porta pilas, las baterias de ion-litio, el modulo expansor de pines, y la ESP 32.&lt;br&gt;
+                                        Para empezar mencionando algunos, con el tiempo se decidira si incluir más o no, también dependerá de que tanto pueda procesar el micro procesador a usar, en este caso la ESP 32.
+                                        &lt;br&gt;&lt;br&gt;
+                        
+                                        Igualmente, con el rendimiento al que se ha presenciado destacar muy poco, se ha preferido optar por unicamente hacer una araña que pueda moverse, en dos direcciones, adelante y atrás. Así, también cada servo de forma independient y al ángulo que se desee, teniendo algunas consideraciones explicadas en otra sección, más adelate.
+                                    &lt;&frasl;p&gt;
+                        
+                                    &lt;div class="images img"&gt;
+                                        &lt;div&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;cuerpo.png" title="image of the spider body" class="image four"&gt;
+                                            &lt;h6 class="text resume"&gt;Parte del torso de la araña&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;h2 class="secondTittle second" id="Cuerpo de la Araña"&gt;cuerpo de la araña&lt;&frasl;h2&gt;
+                        
+                                &lt;div class="content"&gt;
+                                    &lt;p class="paragraph text overview partTwo"&gt;
+                                        Se presenta los resultados de la araña armada con la etructura basica, usando el armazon que define al cuadrupedo, además tres perspectivas diferentes, es el avance inicial, primer paso para llegar al objetivo propuesto, lo ideal es saber desde el principio los servos que se usaran para diseñar las diferentes partes a la medida justa.&lt;br&gt;&lt;br&gt;
+                        
+                                        Asimismo, se puede defimir antes de programar el codigo los ángulos, y movimientos a realizar, que secuencia seguirá, cuales serán los movimientos capaces a realizar, entre otros aspectos. Esto con la finalidad de poder identificar un primer comienzo que sirva como los cimientos para la estructura del código y las conexiones a realizar entre elementos, dispositivos, o mecanismos, tanto de software como mecánicos.&lt;br&gt;&lt;br&gt;
+                        
+                                        En un comienzo, se podrá mover los servos independientemente, escoger el servo y el angulo al que se quiere mover, siempre y cuano se mantenga entre los límites de giro que tiene cada servo, en este caso oscila entre 160° a 180°, para mayor comodidad, se prefiriran los parametros tomando la movilidad del servo con menor capacidad, menos 20 grados, para estabilizar el margen de error y la agilidad de funcionamiento.
+                                    &lt;&frasl;p&gt;
+                        
+                                    &lt;div class="images img"&gt;
+                                        &lt;div class="content_img"&gt;
+                                            &lt;div&gt;
+                                                &lt;img src="..&frasl;static&frasl;images&frasl;superior1.png" title="image of the spider above" class="image one_two"&gt;
+                                                &lt;h6 class="text resume"&gt;Imágen de la araña desde la vista superior&lt;&frasl;h6&gt;
+                                            &lt;&frasl;div&gt;
+                                            &lt;div&gt;
+                                                &lt;img src="..&frasl;static&frasl;images&frasl;inferior.png" title="image of the spider below" class="image three_two"&gt;
+                                                &lt;h6 class="text resume"&gt;Imágen de la araña desde la vista inferior&lt;&frasl;h6&gt;
+                                            &lt;&frasl;div&gt;
+                                        &lt;&frasl;div&gt;
+                                        &lt;div&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;lateral1.png" title="image of the spider lateral" class="image two_two"&gt;
+                                            &lt;h6 class="text resume"&gt;Imágen de la araña desde la vista lateral&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;h2 class="secondTittle second" id="Componentes"&gt;Componentes&lt;&frasl;h2&gt;
+                        
+                                &lt;div class="content"&gt;
+                                    &lt;div class="images img"&gt;
+                                        &lt;div&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;esp32.png" title="image of ESP32" class="image five"&gt;
+                                            &lt;h6 class="text resume"&gt;ESP 32 v-room clasica&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;p class="paragraph text overview res_five"&gt;
+                                        El ESP32-WROOM es el cerebro esencial de nuestra araña, responsable de controlar todos los elementos electrónicos del dispositivo. Este impresionante módulo, basado en el reconocido microcontrolador ESP32 de Espressif Systems, está diseñado para brindar una solución completa y eficiente a los proyectos de Internet de las Cosas (IoT). Con su procesador dual-core de alto rendimiento, conectividad Wi-Fi y Bluetooth integradas, y múltiples interfaces de comunicación, todo en un formato compacto, el ESP32-WROOM destaca por su capacidad para manejar tareas complejas con un consumo de energía sorprendentemente bajo. Es la elección perfecta para aplicaciones que requieren una conectividad inalámbrica robusta y un procesamiento potente, como dispositivos inteligentes, sistemas de automatización y aplicaciones industriales.
+                                    &lt;&frasl;p&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;div class="content"&gt;
+                                    &lt;div class="images img"&gt;
+                                        &lt;div&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;servo.png" title="image of servo" class="image six"&gt;
+                                            &lt;h6 class="text resume over_six"&gt;Servo motor modelo mg90s&lt;&frasl;h6&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;p class="paragraph text overview res_six"&gt;
+                                        En el corazón de nuestro proyecto se encuentran los servomotores, dispositivos electromecánicos que combinan un motor de corriente continua con engranajes y un sistema de control de retroalimentación. Estos componentes, lejos de ser simples motores, nos brindan un control preciso y milimétrico del movimiento rotatorio, permitiéndonos dar vida a nuestra araña robótica. Por ultimo y mas importante resaltar la facilidad de controlar estos dispositivos en este caso por un Esp32.
+                                    &lt;&frasl;p&gt;
+                                &lt;&frasl;div&gt;
+                                &lt;!--END CONTENT RESUME PAGE--&gt;
+                            &lt;&frasl;main&gt;
+                            &lt;!--END BODY-MAIN CONTENT--&gt;
+                        
+                            &lt;!--START FOOTER--&gt;
+                            &lt;div class="footer_page"&gt;
+                                &lt;footer class="footer_body"&gt;
+                        
+                                    &lt;div class="social"&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.instagram.com&frasl;sebastian05_cys?igsh=MW5jODd2OWljOWVlaA=="&gt;
+                                            &lt;i class="fa-brands fa-instagram" title="Instagram"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.snapchat.com&frasl;add&frasl;yuban_camac2019?share_id=BtnmcotmYiE&locale=fr-FR"&gt;
+                                            &lt;i class="fa-brands fa-snapchat" title="Snapchat"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;x.com&frasl;camacho_yuban?t=MqdFYgKTjlyr4yPoxI_UYg&s=09"&gt;
+                                            &lt;i class="fa-brands fa-x-twitter" title="Twitter"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.facebook.com&frasl;yuban.camacho.39?mibextid=ZbWKwL"&gt;
+                                            &lt;i class="fa-brands fa-facebook-f" title="Facebook"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;div class="footer_two_elements"&gt;
+                                        &lt;ul class="footer_icon"&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="index.html"&gt;
+                                                    Home
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="programming.html"&gt;
+                                                    About
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="remote_control.html"&gt;
+                                                    Services
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="https:&frasl;&frasl;www.freeprivacypolicy.com&frasl;live&frasl;a20197ca-d6cc-4cda-bb95-25f29ade460f"&gt;
+                                                    Terms
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="https:&frasl;&frasl;www.freeprivacypolicy.com&frasl;live&frasl;1f654583-6a9b-447e-8425-9addceb96c48"&gt;
+                                                    Privacy Policy
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                        &lt;&frasl;ul&gt;
+                                        &lt;p class="copyright"&gt;
+                                            arcw © 2024
+                                        &lt;&frasl;p&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;footer&gt;
+                            &lt;&frasl;div&gt;
+                            &lt;!--END FOOTER--&gt;
+                        
+                            &lt;script src="..&frasl;static&frasl;script&frasl;js_web.js"&gt;&lt;&frasl;script&gt;
+                        &lt;&frasl;body&gt;
+                        &lt;&frasl;html&gt;                        
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        &lt;!DOCTYPE html&gt;
+                        &lt;html lang="es"&gt;
+                        
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        
+                            &lt;!--FONTS TYPES WEB FREE--&gt;
+                            &lt;link rel="preconnect" href="https:&frasl;&frasl;fonts.googleapis.com"&gt;
+                            &lt;link rel="preconnect" href="https:&frasl;&frasl;fonts.gstatic.com" crossorigin&gt;
+                            &lt;link rel="stylesheet" href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Julee&display=swap"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Macondo&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Jersey+15&display=swap" rel="stylesheet"&gt;
+                            &lt;link rel="stylesheet" href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Nova+Slim&display=swap"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Bebas+Neue&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Protest+Revolution&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Teko:wght@300..700&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"&gt;
+                            &lt;link href="https:&frasl;&frasl;fonts.googleapis.com&frasl;css2?family=Caveat:wght@400..700&family=Protest+Revolution&lay=swap" rel="stylesheet"&gt;
+                        
+                            &lt;!--FILES CSS STYLE PAGE--&gt;
+                            &lt;link rel="stylesheet" href="..&frasl;static&frasl;styles&frasl;style_web.css"&gt;
+                            &lt;link rel="stylesheet" href="..&frasl;static&frasl;styles&frasl;style_remote.css"&gt;
+                        
+                            &lt;!--ICONS WEB STYLES FREE--&gt;
+                            &lt;link rel="icon" href="..&frasl;static&frasl;images&frasl;icono_azul.png"&gt;
+                            &lt;script src="https:&frasl;&frasl;kit.fontawesome.com&frasl;41bcea2ae3.js" crossorigin="anonymous"&gt;&lt;&frasl;script&gt;
+                        
+                            &lt;title&gt;Control Remoto&lt;&frasl;title&gt;
+                        &lt;&frasl;head&gt;
+                        
+                        &lt;body&gt;
+                            &lt;!--START HEADER--&gt;
+                            &lt;header class="head"&gt;
+                                &lt;nav class="header_options"&gt;
+                                    &lt;ul class="options_page"&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="#"&gt;Fuentes &frasl; Recursos&lt;&frasl;a&gt;
+                                            &lt;ul class="secundary_options"&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;www.espressif.com&frasl;en&frasl;products&frasl;socs&frasl;esp32"&gt;ESP 32 WiFi&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;flask.palletsprojects.com&frasl;"&gt;Flask&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="https:&frasl;&frasl;axios-http.com&frasl;docs&frasl;intro"&gt;Axios&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;li&gt;
+                                        &lt;li&gt;
+                                            &lt;a href="#"&gt;Índice&lt;&frasl;a&gt;
+                                            &lt;ul class="secundary_options"&gt;
+                                                &lt;li&gt;&lt;a href="#Control Remoto"&gt;Control Remoto&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                                &lt;li&gt;&lt;a href="#Indicaciones Básicas"&gt;Indicaciones Básicas&lt;&frasl;a&gt;&lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;li&gt;
+                                    &lt;&frasl;ul&gt;
+                                &lt;&frasl;nav&gt;
+                            &lt;&frasl;header&gt;
+                            &lt;!--END HEADER--&gt;
+                        
+                            &lt;!--START MENU--&gt;
+                            &lt;div class="location_panel_side"&gt;
+                        
+                                &lt;div class="panel_location"&gt;
+                                    &lt;div class="panel"&gt;
+                                        &lt;div class="icon__menu"&gt;
+                                            &lt;i class="fa-regular fa-snowflake" title="menú" id="btn_open"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;div&gt;
+                        
+                                &lt;div class="menu_location"&gt;
+                        
+                                    &lt;nav class="menu__side" id="menu_side"&gt;
+                                        &lt;div class="name__page"&gt;
+                                            &lt;img src="..&frasl;static&frasl;images&frasl;icono.png" title="Logo"&gt;
+                                            &lt;i title="Logo"&gt;&lt;&frasl;i&gt;
+                                            &lt;h4&gt;
+                                                Araña robótica controlada por web
+                                            &lt;&frasl;h4&gt;
+                                        &lt;&frasl;div&gt;
+                        
+                                        &lt;div class="options__menu"&gt;
+                                            &lt;ul&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="index.html"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-flag-checkered" title="Inicio"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Inicio
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="remote_control.html" class="selected"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-gamepad" title="Control Remoto"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Control Remoto
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                                &lt;li&gt;
+                                                    &lt;a href="programming.html"&gt;
+                                                        &lt;div class="option"&gt;
+                                                            &lt;i class="fa-solid fa-laptop-code" title="Programación"&gt;&lt;&frasl;i&gt;
+                                                            &lt;h4&gt;
+                                                                Programación
+                                                            &lt;&frasl;h4&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;a&gt;
+                                                &lt;&frasl;li&gt;
+                                            &lt;&frasl;ul&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;nav&gt;
+                                &lt;&frasl;div&gt;
+                            &lt;&frasl;div&gt;
+                            &lt;!--END MENU--&gt;
+                        
+                            &lt;!--START BODY-MAIN CONTENT--&gt;
+                            &lt;main class="body_main" id="body"&gt;
+                                &lt;!--START CONTENT RESUME PAGE--&gt;
+                                &lt;h1 class="tag1"&gt;
+                                    Consola de mando araña robótica
+                                &lt;&frasl;h1&gt;
+                        
+                                &lt;p class="text begin"&gt;
+                                    Comandos para controlar la araña y sus accesorios
+                                &lt;&frasl;p&gt;
+                        
+                                &lt;h2 class="tag2" id="Control Remoto"&gt;
+                                    Control Remoto
+                                &lt;&frasl;h2&gt;
+                                &lt;!--END CONTENT RESUME PAGE--&gt;
+                        
+                                &lt;!--START BUTTONS CONTROL REMOTE--&gt;
+                                &lt;div class="console_container"&gt;
+                                    &lt;div class="inf_receive"&gt;
+                                        &lt;!--
+                                        &lt;div class="distance_sensor design"&gt;
+                                            Auxiliar
+                                        &lt;&frasl;div&gt;
+                                        --&gt;
+                                        &lt;div class="video_box design"&gt;
+                                            Vídeo
+                                        &lt;&frasl;div&gt;
+                                        &lt;!--
+                                        &lt;div class="ambient_sensor"&gt;
+                                            &lt;div class="temperature design"&gt;
+                                                Auxiliar
+                                            &lt;&frasl;div&gt;
+                                            &lt;div class="humidity design"&gt;
+                                                Auxiliar
+                                            &lt;&frasl;div&gt;
+                                        &lt;&frasl;div&gt;
+                                        --&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;div class="buttons"&gt;
+                                        &lt;div class="joysticks_box one design"&gt;
+                                                &lt;div class="joystick_base"&gt;
+                                                    &lt;div class="joystick_handle"&gt;&lt;&frasl;div&gt;
+                                                &lt;&frasl;div&gt;
+                                        &lt;&frasl;div&gt;
+                        
+                                        &lt;div class="buttons_moves design"&gt;
+                                            &lt;button id="showKnobs"&gt;Movimiento&lt;br&gt;Articular&lt;&frasl;button&gt;
+                                            &lt;div class="knobs"&gt;
+                                                &lt;div class="knob_container 1" data-servo-id="0"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 2" data-servo-id="1"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 3" data-servo-id="2"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 4" data-servo-id="3"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 5" data-servo-id="4"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 6" data-servo-id="5"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 7" data-servo-id="6"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 8" data-servo-id="7"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 9" data-servo-id="8"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 10" data-servo-id="9"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 11" data-servo-id="10"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                        
+                                                &lt;div class="knob_container 12" data-servo-id="11"&gt;
+                                                    &lt;div class="knob_box"&gt;
+                                                        &lt;div class="knob_path"&gt;
+                                                            &lt;div class="pointer_mark"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                        &lt;div class="backup"&gt;
+                                                            &lt;div class="knob"&gt;&lt;&frasl;div&gt;
+                                                        &lt;&frasl;div&gt;
+                                                    &lt;&frasl;div&gt;
+                                                    &lt;p class="value_degree"&gt;35°&lt;&frasl;p&gt;
+                                                &lt;&frasl;div&gt;
+                                            &lt;&frasl;div&gt;
+                                        &lt;&frasl;div&gt;
+                        
+                                        &lt;div class="joysticks_box two design"&gt;
+                                                &lt;div class="joystick_base"&gt;
+                                                    &lt;div class="joystick_handle"&gt;&lt;&frasl;div&gt;
+                                                &lt;&frasl;div&gt;
+                                        &lt;&frasl;div&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;div&gt;
+                                &lt;!--END BUTTONS CONTROL REMOTE--&gt;
+                        
+                                &lt;!--START CONTENT RESUME PAGE--&gt;
+                                &lt;h2 class="tag2" id="Indicaciones Básicas"&gt;
+                                    Indicaciones Básicas
+                                &lt;&frasl;h2&gt;
+                        
+                                &lt;p class="text"&gt;
+                                    &lt;ul class="text"&gt;
+                                        &lt;li&gt;
+                                            Los "knobs" o "perillas" desplegados con el botón movimiento articular, representan cada division de movimiento en la araña, cada servo, las filasson la articulación y las columnas representan las partas, iniciando desde el servo en la base del cuerpo y conectando con la primer "perilla" de arriba abajo, las patas tienen un número asignado, con lo cual corresponde con la primer fila el primer número.
+                                            &lt;br&gt;&lt;br&gt;
+                                        &lt;&frasl;li&gt;
+                                        &lt;li&gt;
+                                            Los joystick, son una propuesta y están de forma auiliar, por si se quiere agregar alguna otra funcionalidad.
+                                            &lt;br&gt;&lt;br&gt;
+                                        &lt;&frasl;li&gt;
+                                        &lt;li&gt;
+                                            La finalidad de estos controles es tener una base para controlar el robot de forma remota a través de una red WiFi, además como accesorio la disponibilidad de una camara que se le agrega a la página.
+                                            &lt;br&gt;&lt;br&gt;
+                                        &lt;&frasl;li&gt;
+                                        &lt;li&gt;
+                                            En total son 12 servos de 180° por algunas limitantes se maneja de 35° a 110°.
+                                        &lt;&frasl;li&gt;
+                                    &lt;&frasl;ul&gt;
+                                &lt;&frasl;p&gt;
+                                &lt;!--END CONTENT RESUME PAGE--&gt;
+                            &lt;&frasl;main&gt;
+                            &lt;!--END BODY-MAIN CONTENT--&gt;
+                        
+                            &lt;!--START FOOTER--&gt;
+                            &lt;div class="footer_page"&gt;
+                                &lt;footer class="footer_body"&gt;
+                        
+                                    &lt;div class="social"&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.instagram.com&frasl;sebastian05_cys?igsh=MW5jODd2OWljOWVlaA=="&gt;
+                                            &lt;i class="fa-brands fa-instagram" title="Instagram"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.snapchat.com&frasl;add&frasl;yuban_camac2019?share_id=BtnmcotmYiE&locale=fr-FR"&gt;
+                                            &lt;i class="fa-brands fa-snapchat" title="Snapchat"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;x.com&frasl;camacho_yuban?t=MqdFYgKTjlyr4yPoxI_UYg&s=09"&gt;
+                                            &lt;i class="fa-brands fa-x-twitter" title="Twitter"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                        &lt;a href="https:&frasl;&frasl;www.facebook.com&frasl;yuban.camacho.39?mibextid=ZbWKwL"&gt;
+                                            &lt;i class="fa-brands fa-facebook-f" title="Facebook"&gt;&lt;&frasl;i&gt;
+                                        &lt;&frasl;a&gt;
+                                    &lt;&frasl;div&gt;
+                        
+                                    &lt;div class="footer_two_elements"&gt;
+                                        &lt;ul class="footer_icon"&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="index.html"&gt;
+                                                    Home
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="programming.html"&gt;
+                                                    About
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="remote_control.html"&gt;
+                                                    Services
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="https:&frasl;&frasl;www.freeprivacypolicy.com&frasl;live&frasl;a20197ca-d6cc-4cda-bb95-25f29ade460f"&gt;
+                                                    Terms
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                            &lt;li&gt;
+                                                &lt;a href="https:&frasl;&frasl;www.freeprivacypolicy.com&frasl;live&frasl;1f654583-6a9b-447e-8425-9addceb96c48"&gt;
+                                                    Privacy Policy
+                                                &lt;&frasl;a&gt;
+                                            &lt;&frasl;li&gt;
+                                        &lt;&frasl;ul&gt;
+                                        &lt;p class="copyright"&gt;
+                                            arcw © 2024
+                                        &lt;&frasl;p&gt;
+                                    &lt;&frasl;div&gt;
+                                &lt;&frasl;footer&gt;
+                            &lt;&frasl;div&gt;
+                            &lt;!--END FOOTER--&gt;
+                        
+                            &lt;script src="..&frasl;static&frasl;script&frasl;js_web.js"&gt;&lt;&frasl;script&gt;
+                            &lt;script src="..&frasl;static&frasl;script&frasl;remote.js"&gt;&lt;&frasl;script&gt;
+                        &lt;&frasl;body&gt;
+                        &lt;&frasl;html&gt;
+                    </code>
+                </pre>
+            </div>
+            <br>
+
+            <br>
+            <div class="tittleText">
+                <div class="titlesCode">JavaScript</div>
+            </div>
+
+            <div class="coding">
+                <pre class="code_block">
+                    <code class="codeOne">
+                        document.getElementById&lpar;"btn_open"&rpar;.addEventListener&lpar;"click", open_close_menu&rpar;;
+
+                        var side_menu = document.getElementById&lpar;"menu_side"&rpar;;
+                        var btn_open = document.getElementById&lpar;"btn_open"&rpar;;
+                        var body = document.getElementById&lpar;"body"&rpar;;
+
+                        function open_close_menu&lpar;&rpar; &lbrace;
+                            body.classList.toggle&lpar;"body_move"&rpar;;
+                            side_menu.classList.toggle&lpar;"menu__side_move"&rpar;;
+                            &rbrace;
+
+                        if &lpar;window.innerWidth < 1000&rpar; &lbrace;
+                            body.classList.add&lpar;"body_move"&rpar;;
+                            side_menu.classList.add&lpar;"menu__side_move"&rpar;;
+                        &rbrace;
+
+                        window.addEventListener&lpar;"resize", function&lpar;&rpar; &lbrace;
+                            if &lpar;window.innerWidth > 1000&rpar; &lbrace;
+                                body.classList.remove&lpar;"body_move"&rpar;;
+                                side_menu.classList.remove&lpar;"menu__side_move"&rpar;;
+                            &rbrace;
+                            if &lpar;window.innerWidth < 1000&rpar;&lbrace;
+                                body.classList.add&lpar;"body_move"&rpar;;
+                                side_menu.classList.add&lpar;"menu__side_move"&rpar;;
+                            &rbrace;
+                        &rbrace;&rpar;;
+
+                        document.addEventListener&lpar;"DOMContentLoaded", &lpar;&rpar; => &lbrace;
+                            const menuItems = document.querySelectorAll&lpar;'.options_page > li'&rpar;;
+
+                            menuItems.forEach&lpar;item => &lbrace;
+                                let timer;
+                                const secondaryMenu = item.querySelector&lpar;'.secundary_options'&rpar;;
+
+                                item.addEventListener&lpar;'mouseenter', &lpar;&rpar; => &lbrace;
+                                    clearTimeout&lpar;timer&rpar;;
+                                    secondaryMenu.style.display = 'block';
+                                &rbrace;&rpar;;
+
+                                item.addEventListener&lpar;'mouseleave', &lpar;&rpar; => &lbrace;
+                                    timer = setTimeout&lpar;&lpar;&rpar; => &lbrace;
+                                        secondaryMenu.style.display = 'none';
+                                    &rbrace;, 125&rpar;;
+                                &rbrace;&rpar;;
+
+                                item.addEventListener&lpar;'click', &lpar;&rpar; => &lbrace;
+                                    clearTimeout&lpar;timer&rpar;;
+                                    secondaryMenu.style.display = secondaryMenu.style.display === 'block' ? 'none' : 'block';
+                                &rbrace;&rpar;;
+
+                                secondaryMenu.addEventListener&lpar;'mouseenter', &lpar;&rpar; => &lbrace;
+                                    clearTimeout&lpar;timer&rpar;;
+                                    secondaryMenu.style.display = 'block';
+                                &rbrace;&rpar;;
+
+                                secondaryMenu.addEventListener&lpar;'mouseleave', &lpar;&rpar; => &lbrace;
+                                    timer = setTimeout&lpar;&lpar;&rpar; => &lbrace;
+                                        secondaryMenu.style.display = 'none';
+                                    &rbrace;, 125&rpar;;
+                                &rbrace;&rpar;;
+                            &rbrace;&rpar;;
+                        &rbrace;&rpar;;
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        document.getElementById&lpar;'showKnobs'&rpar;.addEventListener&lpar;'click', &lpar;&rpar; => &lbrace;
+                            document.querySelector&lpar;'.knobs'&rpar;.classList.toggle&lpar;'open'&rpar;;
+                        &rbrace;&rpar;;
+
+                        const pointerMark = document.querySelectorAll&lpar;'.pointer_mark'&rpar;;
+                        const backup = document.querySelectorAll&lpar;'.backup'&rpar;;
+                        const knob = document.querySelectorAll&lpar;'.knob'&rpar;;
+                        const valueDegrees = document.querySelectorAll&lpar;'.value_degree'&rpar;;
+
+                        const min = 35;
+                        const max = 110;
+                        let value = 0;
+                        const fullActionAngle = 110;
+                        const startAngle = -55;
+
+                        knob.forEach&lpar;&lpar;knob, index&rpar; => &lbrace;
+                            knob.addEventListener&lpar;'click', &lpar;e&rpar; => &lbrace;
+                                knob.classList.toggle&lpar;'on'&rpar;;
+                                backup[index].classList.toggle&lpar;'on'&rpar;;
+                                pointerMark[index].classList.toggle&lpar;'on'&rpar;;
+                                valueDegrees[index].classList.toggle&lpar;'on'&rpar;;
+                            &rbrace;&rpar;;
+                        
+                            knob.addEventListener&lpar;'wheel', &lpar;e&rpar; => &lbrace;
+                                if &lpar;!knob.classList.contains&lpar;'on'&rpar;&rpar; return;
+                        
+                                e.preventDefault&lpar;&rpar;;
+                        
+                                if &lpar;e.deltaY > 0&rpar; &lbrace;
+                                value++;
+                                value = value > max ? max : value;
+                                &rbrace; else &lbrace;
+                                value--;
+                                value = value < min ? min : value;
+                                &rbrace;
+                        
+                                const newPos = fullActionAngle / &lpar;max - min&rpar; * &lpar;value - min&rpar; + startAngle;
+                                pointerMark[index].style.transform = `rotateZ&lpar;$&lbrace;newPos&rbrace;deg&rpar;`;
+                                valueDegrees[index].textContent = value + '°';
+                            &rbrace;&rpar;;
+                        &rbrace;&rpar;;
+                        
+                        document.addEventListener&lpar;'DOMContentLoaded', &lpar;event&rpar; => &lbrace;
+                            const joystickContainers = document.querySelectorAll&lpar;'.joystick_base'&rpar;;
+                        
+                            joystickContainers.forEach&lpar;&lpar;container&rpar; => &lbrace;
+                                const joystickHandle = container.querySelector&lpar;'.joystick_handle'&rpar;;
+                                let isDragging = false;
+                                let containerRect = container.getBoundingClientRect&lpar;&rpar;;
+                                let handleRect = joystickHandle.getBoundingClientRect&lpar;&rpar;;
+                                let centerX = containerRect.width / 2;
+                                let centerY = containerRect.height / 2;
+                                let maxDistance = containerRect.width / 2 - handleRect.width / 2;
+                        
+                                joystickHandle.addEventListener&lpar;'mousedown', function&lpar;event&rpar; &lbrace;
+                                    isDragging = true;
+                                    containerRect = container.getBoundingClientRect&lpar;&rpar;;
+                                    handleRect = joystickHandle.getBoundingClientRect&lpar;&rpar;;
+                                    centerX = containerRect.width / 2;
+                                    centerY = containerRect.height / 2;
+                                    maxDistance = containerRect.width / 2 - handleRect.width / 2;
+                                &rbrace;&rpar;;
+                        
+                                document.addEventListener&lpar;'mousemove', function&lpar;event&rpar; &lbrace;
+                                    if &lpar;isDragging&rpar; &lbrace;
+                                        const offsetX = event.clientX - containerRect.left - centerX;
+                                        const offsetY = event.clientY - containerRect.top - centerY;
+                                        const distance = Math.min&lpar;Math.sqrt&lpar;offsetX * offsetX + offsetY * offsetY&rpar;, maxDistance&rpar;;
+                                        const angle = Math.atan2&lpar;offsetY, offsetX&rpar;;
+                                        const x = Math.cos&lpar;angle&rpar; * distance;
+                                        const y = Math.sin&lpar;angle&rpar; * distance;
+                        
+                                        joystickHandle.style.transform = `translate&lpar;$&lbrace;x&rbrace;px, $&lbrace;y&rbrace;px&rpar;`;
+                                    &rbrace;
+                                &rbrace;&rpar;;
+                        
+                                document.addEventListener&lpar;'mouseup', function&lpar;event&rpar; &lbrace;
+                                    if &lpar;isDragging&rpar; &lbrace;
+                                        isDragging = false;
+                                        joystickHandle.style.transform = 'translate&lpar;0, 0&rpar;';
+                                    &rbrace;
+                                &rbrace;&rpar;;
+                            &rbrace;&rpar;;
+                        &rbrace;&rpar;;
+                    </code>
+                </pre>
+
+                <pre class="code_block">
+                    <code class="codeOne">
+                        document.addEventListener&lpar;"DOMContentLoaded", function&lpar;&rpar; &lbrace;
+                        const preElements = document.querySelectorAll&lpar;'pre.code_block'&rpar;;
+
+                        preElements.forEach&lpar;pre => &lbrace;
+                            const code = pre.querySelector&lpar;'code'&rpar;;
+                            if &lpar;code&rpar; &lbrace;
+                                const lines = code.innerHTML.split&lpar;'\n'&rpar;;
+                                const trimmedLines = lines.map&lpar;line => line.replace&lpar;/^\s&lbrace;24&rbrace;/, ''&rpar;&rpar;;
+                                code.innerHTML = trimmedLines.join&lpar;'\n'&rpar;;
+                            &rbrace;
+                        &rbrace;&rpar;;
+                        &rbrace;&rpar;;
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </main>
+    <!--END BODY-MAIN CONTENT-->
+
+    <!--START FOOTER-->
+    <div class="footer_page">
+        <footer class="footer_body">
+
+            <div class="social">
+                <a href="https://www.instagram.com/sebastian05_cys?igsh=MW5jODd2OWljOWVlaA==">
+                    <i class="fa-brands fa-instagram" title="Instagram"></i>
+                </a>
+                <a href="https://www.snapchat.com/add/yuban_camac2019?share_id=BtnmcotmYiE&locale=fr-FR">
+                    <i class="fa-brands fa-snapchat" title="Snapchat"></i>
+                </a>
+                <a href="https://x.com/camacho_yuban?t=MqdFYgKTjlyr4yPoxI_UYg&s=09">
+                    <i class="fa-brands fa-x-twitter" title="Twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/yuban.camacho.39?mibextid=ZbWKwL">
+                    <i class="fa-brands fa-facebook-f" title="Facebook"></i>
+                </a>
+            </div>
+
+            <div class="footer_two_elements">
+                <ul class="footer_icon">
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="programming.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="remote_control.html">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.freeprivacypolicy.com/live/a20197ca-d6cc-4cda-bb95-25f29ade460f">
+                            Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.freeprivacypolicy.com/live/1f654583-6a9b-447e-8425-9addceb96c48">
+                            Privacy Policy
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    arcw © 2024
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!--END FOOTER-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="../static/script/js_web.js"></script>
+    <script src="../static/script/programming.js"></script>
+</body>
+</html>
